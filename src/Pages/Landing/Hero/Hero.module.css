@@ -1,0 +1,121 @@
+.hero {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: max(80vh, 700px);
+  padding-top: 5rem;
+}
+.leftHero {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+.leftHero h1 {
+  font-weight: 800;
+  font-size: 70px;
+  line-height: 68px;
+  color: #ffffff;
+}
+.leftHero p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #d9f7f5;
+}
+.ctaBtn {
+  width: 146px;
+  height: 42px;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 16px;
+  background-color: #b50000;
+  display: grid;
+  place-items: center;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: "Nunito";
+  font-weight: 700;
+  margin-top: 20px;
+}
+.ctaBtn:hover {
+  border-color: #b50000;
+  background-color: transparent;
+}
+.rightHero {
+  position: relative;
+}
+.sheild {
+  mix-blend-mode: color-dodge;
+  object-fit: contain;
+  width: 276px;
+  height: 405px;
+  z-index: 4;
+}
+.icon {
+  position: absolute;
+  width: 206px;
+  height: 178px;
+  object-fit: contain;
+  left: 51%;
+  top: 41%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+}
+.circle {
+  position: absolute;
+  mix-blend-mode: color-dodge;
+  width: 169.34px;
+  height: 171.3px;
+  object-fit: contain;
+  left: 67%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+}
+@media screen and (max-width: 1024px) {
+  .leftHero h1 {
+    font-size: 50px;
+  }
+  .leftHero p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 806px) {
+  .hero {
+    flex-direction: column;
+    gap: 3rem;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    height: auto;
+  }
+  .sheild,
+  .icon {
+    max-width: 100%;
+    width: 100%;
+  }
+  .circle {
+    top: 48%;
+    left: 70%;
+  }
+}
+@media screen and (max-width: 478px) {
+  .leftHero h1 {
+    font-size: 40px;
+    line-height: 1;
+  }
+  .leftHero br {
+    display: none;
+  }
+  .circle {
+    top: 45%;
+    left: 80%;
+  }
+}

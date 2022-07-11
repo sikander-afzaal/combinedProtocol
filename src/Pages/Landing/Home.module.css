@@ -1,0 +1,27 @@
+.heroBg {
+  background-image: url("../../Assets/hero-bg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 80px;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.blackBg {
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-inline: 20px;
+  padding-bottom: 120px;
+  background-color: #0c1013;
+  width: 100%;
+}
+@media screen and (max-width: 500px) {
+  .heroBg {
+    padding-bottom: 40px;
+  }
+}

@@ -1,0 +1,157 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-top: 75px;
+  background: #00060a;
+}
+.topFooterCont,
+.bottomFooterCont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 20px;
+}
+.topFooterCont {
+  background: #00060a;
+  padding-bottom: 2rem;
+}
+.bottomFooterCont {
+  background: #000305;
+  height: 54px;
+  border-top: 2px solid #202932;
+  padding: 20px 20px;
+}
+.bottomFooter,
+.topFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+.topFooter {
+  gap: 6rem;
+}
+.leftFooter {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.leftFooter img {
+  max-width: 370.37px;
+  height: 86px;
+  object-fit: contain;
+}
+.leftFooter p {
+  font-family: "Nunito";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 119.5%;
+  color: #d9f7f5;
+  max-width: 407px;
+}
+.rightFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+}
+.colFooter {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 5px;
+  text-align: left;
+}
+.colFooter h1 {
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 217%;
+  text-transform: uppercase;
+  color: #da2a2a;
+}
+.colFooter a {
+  font-family: "Nunito";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 217%;
+  text-transform: capitalize;
+  color: #d9f7f5;
+  text-decoration: none;
+}
+.bottomFooter p {
+  font-family: "Nunito";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 119.5%;
+  color: #d9f7f5;
+}
+.socialDiv {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+.socialDiv a {
+  text-decoration: none;
+  color: #202932;
+  font-size: 1.6rem;
+}
+@media screen and (max-width: 905px) {
+  .footer {
+    padding-top: 40px;
+  }
+  .topFooter,
+  .bottomFooter {
+    flex-direction: column;
+  }
+  .topFooter {
+    gap: 30px;
+  }
+  .leftFooter {
+    align-items: center;
+  }
+  .leftFooter p {
+    text-align: center;
+  }
+  .rightFooter {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .colFooter {
+    gap: 8px;
+    align-items: center;
+    text-align: center;
+  }
+  .bottomFooterCont {
+    height: auto;
+    padding: 30px 20px;
+  }
+  .bottomFooter {
+    gap: 20px;
+  }
+  .bottomFooter p {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 414px) {
+  .leftFooter p {
+    font-size: 14px;
+    width: 100%;
+    max-width: 100%;
+  }
+  .leftFooter img {
+    max-width: 100%;
+    height: auto;
+  }
+  .socialDiv {
+    gap: 10px;
+  }
+}

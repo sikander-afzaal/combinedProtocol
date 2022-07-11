@@ -1,0 +1,50 @@
+.overlay {
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.7);
+  inset: 0;
+  display: block;
+}
+
+.popUp {
+  position: fixed;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  z-index: 4;
+  transform: translate(-50%, -50%);
+  background-color: #0c1013;
+  border-radius: 20px;
+  border: 1px solid #555;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 500px;
+  width: 100%;
+  padding: 10px;
+  gap: 10px;
+  height: 332px;
+}
+.pop {
+  flex: 0.5;
+  background-color: white;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  width: 100%;
+  gap: 20px;
+}
+.pop img {
+  max-width: 100%;
+  width: 50px;
+  object-fit: contain;
+}
+.pop h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: black;
+}
