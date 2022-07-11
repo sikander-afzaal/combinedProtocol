@@ -18,7 +18,7 @@ function Earn() {
           className={({ isActive }) => (isActive ? "active" : "")}
           to={"/PancakeSwap/Earn/Pools"}
         >
-          Stake
+          Pools
         </NavLink>
       </div>
       <Routes>

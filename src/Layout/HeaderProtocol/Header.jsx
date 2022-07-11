@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faArrowRightFromBracket,
-  faEllipsis,
+  // faArrowRightFromBracket,
+  // faEllipsis,
   faGear,
   faGlobe,
   faMoneyBillTrendUp,
   faSackDollar,
-  faShapes,
+  // faShapes,
   faTrophy,
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -35,8 +35,8 @@ function Header() {
             </Link>
             <div className={`${styles.dropMenu} ${styles.dropMenu1}`}>
               <Link to={"/PancakeSwap/Trade/"}>Swap</Link>
-              <Link to={"/PancakeSwap/Trade/Limit"}>Stake</Link>
-              <Link to={"/PancakeSwap/Trade/Liquidity"}>Farm</Link>
+              {/* <Link to={"/PancakeSwap/Trade/Limit"}>Stake</Link> */}
+              <Link to={"/PancakeSwap/Trade/Liquidity"}>Liquidity</Link>
             </div>
           </div>
           <div className={`${styles.navLink}  ${styles.navLink2}`}>
@@ -45,7 +45,7 @@ function Header() {
             </Link>
             <div className={`${styles.dropMenu} ${styles.dropMenu2}`}>
               <Link to={"/PancakeSwap/Earn/Farm"}>Farms</Link>
-              <Link to={"/PancakeSwap/Earn/Pools"}>Stake</Link>
+              <Link to={"/PancakeSwap/Earn/Pools"}>Pools</Link>
             </div>
           </div>
           <div className={`${styles.navLink}  ${styles.navLink3}`}>
@@ -53,12 +53,10 @@ function Header() {
               Win
             </Link>
             <div className={`${styles.dropMenu} ${styles.dropMenu3}`}>
-              <Link to={"/PancakeSwap"}>Trading Competition</Link>
-              <Link to={"/PancakeSwap"}>Prediction (BETA)</Link>
               <Link to={"/PancakeSwap"}>Lottery</Link>
             </div>
           </div>
-          <div className={`${styles.navLink}  ${styles.navLink4}`}>
+          {/* <div className={`${styles.navLink}  ${styles.navLink4}`}>
             <Link className={styles.mainNav} to={"/PancakeSwap"}>
               NFT
             </Link>
@@ -67,8 +65,8 @@ function Header() {
               <Link to={"/PancakeSwap"}>Collections</Link>
               <Link to={"/PancakeSwap"}>Activity</Link>
             </div>
-          </div>
-          <div className={`${styles.navLink}  ${styles.navLink5}`}>
+          </div> */}
+          {/* <div className={`${styles.navLink}  ${styles.navLink5}`}>
             <div className={styles.mainNav}>
               <FontAwesomeIcon icon={faEllipsis} />
             </div>
@@ -93,7 +91,7 @@ function Header() {
                 </span>
               </Link>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className={styles.rightHeader}>
           <div className={styles.amount}>
@@ -143,9 +141,28 @@ function Header() {
         className={`${styles.overlay} ${menu !== "" ? styles.openOverlay : ""}`}
       ></div>
       <div className={styles.bottomBar}>
-        <div className={`${styles.mobLink}`}>
+        <div
+          onClick={() =>
+            setMenu((prev) => {
+              if (prev === "TRADE") {
+                return "";
+              }
+              return "TRADE";
+            })
+          }
+          className={`${styles.mobLink} ${styles.mobLink2}`}
+        >
           <FontAwesomeIcon icon={faMoneyBillTrendUp} />
           <p>Trade</p>
+          <div
+            className={`${styles.dropMenu}  ${
+              menu === "TRADE" ? styles.openMenu : ""
+            }`}
+          >
+            <Link to={"/PancakeSwap/Trade/"}>Swap</Link>
+            {/* <Link to={"/PancakeSwap/Trade/Limit"}>Stake</Link> */}
+            <Link to={"/PancakeSwap/Trade/Liquidity"}>Liquidity</Link>
+          </div>
         </div>
         <div
           onClick={() =>
@@ -187,12 +204,10 @@ function Header() {
               menu === "WIN" ? styles.openMenu : ""
             }`}
           >
-            <Link to={"/PancakeSwap"}>Trading Competition</Link>
-            <Link to={"/PancakeSwap"}>Prediction (BETA)</Link>
             <Link to={"/PancakeSwap"}>Lottery</Link>
           </div>
         </div>
-        <div
+        {/* <div
           onClick={() =>
             setMenu((prev) => {
               if (prev === "NFT") {
@@ -214,8 +229,8 @@ function Header() {
             <Link to={"/PancakeSwap"}>Collections</Link>
             <Link to={"/PancakeSwap"}>Activity</Link>
           </div>
-        </div>
-        <div
+        </div> */}
+        {/* <div
           onClick={() =>
             setMenu((prev) => {
               if (prev === "MENU") {
@@ -251,7 +266,7 @@ function Header() {
               </span>
             </Link>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );
