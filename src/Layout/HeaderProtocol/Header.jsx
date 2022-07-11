@@ -13,7 +13,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import styles from "./Header.module.css";
-import logoDesk from "../../Assets/logo-desk.png";
+import logoDesk from "../../Assets/logo-desk.svg";
 import logoMob from "../../Assets/logo-mob.png";
 import small from "../../Assets/small-ico.svg";
 function Header() {
@@ -35,14 +35,8 @@ function Header() {
             </Link>
             <div className={`${styles.dropMenu} ${styles.dropMenu1}`}>
               <Link to={"/PancakeSwap/Trade/"}>Swap</Link>
-              <Link to={"/PancakeSwap/Trade/Limit"}>Limit</Link>
-              <Link to={"/PancakeSwap/Trade/Liquidity"}>Liquidity</Link>
-              <Link to={"/PancakeSwap"}>
-                Perpetual{" "}
-                <span>
-                  <FontAwesomeIcon icon={faArrowRightFromBracket} />
-                </span>
-              </Link>
+              <Link to={"/PancakeSwap/Trade/Limit"}>Stake</Link>
+              <Link to={"/PancakeSwap/Trade/Liquidity"}>Farm</Link>
             </div>
           </div>
           <div className={`${styles.navLink}  ${styles.navLink2}`}>
@@ -51,7 +45,7 @@ function Header() {
             </Link>
             <div className={`${styles.dropMenu} ${styles.dropMenu2}`}>
               <Link to={"/PancakeSwap/Earn/Farm"}>Farms</Link>
-              <Link to={"/PancakeSwap/Earn/Pools"}>Pools</Link>
+              <Link to={"/PancakeSwap/Earn/Pools"}>Stake</Link>
             </div>
           </div>
           <div className={`${styles.navLink}  ${styles.navLink3}`}>

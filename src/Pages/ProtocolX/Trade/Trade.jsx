@@ -19,15 +19,14 @@ function Trade() {
           className={({ isActive }) => (isActive ? "active" : "")}
           to={"/PancakeSwap/Trade/Limit"}
         >
-          Limit
+          Stake
         </NavLink>
         <NavLink
           className={({ isActive }) => (isActive ? "active" : "")}
           to={"/PancakeSwap/Trade/Liquidity"}
         >
-          Liquidity
+          Farm
         </NavLink>
-        <a href="#">Perpetual</a>
       </div>
       <Routes>
         <Route path="/" element={<Swap />} />

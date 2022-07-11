@@ -16,7 +16,7 @@
   transition: all 0.2s ease;
   height: 48px;
   padding: 0px 24px;
-  background-color: var(--button-bg);
+  background-color: var(--red-color);
   color: white;
 }
 .mainBtn svg,
@@ -25,15 +25,15 @@
 }
 .mainBtn:hover {
   background-color: transparent;
-  color: var(--button-bg);
-  border-color: var(--button-bg);
+  color: var(--red-color);
+  border-color: var(--red-color);
 }
 .inverseBtn {
   align-items: center;
   justify-content: center;
   display: inline-flex;
   gap: 20px;
-  border: 2px solid var(--button-bg);
+  border: 2px solid var(--red-color);
   border-radius: 16px;
   cursor: pointer;
   font-family: inherit;
@@ -47,9 +47,9 @@
   height: 48px;
   padding: 0px 24px;
   background-color: transparent;
-  color: var(--button-bg);
+  color: var(--red-color);
 }
 .inverseBtn:hover {
-  background-color: var(--button-bg);
+  background-color: var(--red-color);
   color: white;
 }

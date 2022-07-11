@@ -12,7 +12,7 @@ import {
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 
 import styles from "./Footer.module.css";
-import logo from "../../Assets/logoFooter.svg";
+import logo from "../../Assets/logo-desk.svg";
 import small from "../../Assets/small-ico.svg";
 import Button from "../../Components/Button/Button";
 import { faMoon, faSun } from "@fortawesome/free-regular-svg-icons";
@@ -25,9 +25,7 @@ function Footer() {
         <div className={styles.footerGrid}>
           <div className={styles.footerCol}>
             <h1>About</h1>
-            <a style={{ color: "rgb(255, 178, 55)" }} href="#">
-              Contact
-            </a>
+            <a href="#">Contact</a>
             <a href="#">Brand</a>
             <a href="#">Blog</a>
             <a href="#">Community </a>
