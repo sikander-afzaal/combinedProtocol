@@ -274,13 +274,13 @@
     width: 100%;
     height: 100vh;
     z-index: 10;
-    background-color: rgba(40, 13, 95, 0.6);
+    background-color: var(--black-color);
     opacity: 0;
     pointer-events: none;
     transition: all 0.2s ease-in-out;
   }
   .openOverlay {
-    opacity: 1;
+    opacity: 0.7;
     pointer-events: all;
   }
 }
