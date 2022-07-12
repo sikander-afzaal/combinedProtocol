@@ -21,6 +21,9 @@ import circ3 from "../../../Assets/circles/circ3.svg";
 import circ4 from "../../../Assets/circles/circ4.svg";
 import circ5 from "../../../Assets/circles/circ5.svg";
 import circ6 from "../../../Assets/circles/circ6.svg";
+import win1 from "../../../Assets/win1.svg";
+import win2 from "../../../Assets/win2.svg";
+import chart from "../../../Assets/chart.svg";
 
 function LotteryCol({ head, desc, sub, his, tickets }) {
   return (
@@ -289,6 +292,190 @@ function Lottery() {
               </p>
             </div>
           )}
+        </div>
+      </div>
+      <div className={styles.sec5Cont}>
+        <div className={styles.sec5}>
+          <h1 className={styles.sec5Head}>How to Play</h1>
+          <p className={styles.sec5Desc}>
+            If the digits on your tickets match the winning numbers in the
+            correct order, you win a portion of the prize pool.Simple
+          </p>
+          <div className={styles.cardRow}>
+            <div className={styles.card}>
+              <p>Step 1</p>
+              <h4>Buy Tickets</h4>
+              <h5>
+                Prices are set when the round starts, equal to 5 USD in CAKE per
+                ticket.
+              </h5>
+            </div>
+
+            <div className={styles.card}>
+              <p>Step 2</p>
+              <h4>Wait for the Draw</h4>
+              <h5>
+                There is one draw every day alternating between 0 AM UTC and 12
+                PM UTC.
+              </h5>
+            </div>
+            <div className={styles.card}>
+              <p>Step 3</p>
+              <h4>Check for Prizes</h4>
+              <h5>
+                Once the round’s over, come back to the page and check to see if
+                you’ve won!
+              </h5>
+            </div>
+          </div>
+          <div className={styles.criteria}>
+            <div className={styles.leftCriteria}>
+              <h3>Winning Criteria</h3>
+              <h4>
+                The digits on your ticket must match in the correct order to
+                win.
+              </h4>
+              <p>Here’s an example lottery draw, with two tickets, A and B.</p>
+              <ul>
+                <li>
+                  Ticket A: The first 3 digits and the last 2 digits match, but
+                  the 4th digit is wrong, so this ticket only wins a “Match
+                  first 3” prize.
+                </li>
+                <li>
+                  Ticket B: Even though the last 5 digits match, the first digit
+                  is wrong, so this ticket doesn’t win a prize.
+                </li>
+              </ul>
+              <p>
+                Prize brackets don’t ‘stack’: if you match the first 3 digits in
+                order, you’ll only win prizes from the ‘Match 3’ bracket, and
+                not from ‘Match 1’ and ‘Match 2’.
+              </p>
+            </div>
+            <div className={styles.rightCriteria}>
+              <div className={styles.numbers}>
+                <div className={styles.circleDiv}>
+                  <img src={circ1} alt="" />
+                  <h3>0</h3>
+                </div>
+                <div className={styles.circleDiv}>
+                  <img src={circ2} alt="" />
+                  <h3>9</h3>
+                </div>
+                <div className={styles.circleDiv}>
+                  <img src={circ3} alt="" />
+                  <h3>9</h3>
+                </div>
+                <div className={styles.circleDiv}>
+                  <img src={circ4} alt="" />
+                  <h3>9</h3>
+                </div>
+                <div className={styles.circleDiv}>
+                  <img src={circ5} alt="" />
+                  <h3>1</h3>
+                </div>
+                <div className={styles.circleDiv}>
+                  <img src={circ6} alt="" />
+                  <h3>5</h3>
+                </div>
+              </div>
+              <div className={styles.criRow}>
+                <h5>A</h5>
+                <img src={win1} alt="" />
+              </div>
+              <div className={styles.criRow}>
+                <h5>B</h5>
+                <img src={win2} alt="" />
+              </div>
+            </div>
+          </div>
+          <div className={styles.criteria}>
+            <div className={styles.leftCriteria}>
+              <h3>Prize Funds</h3>
+              <p>The prizes for each lottery round come from three sources:</p>
+              <h4>Ticket Purchases</h4>
+              <ul>
+                <li>
+                  100% of the CAKE paid by people buying tickets that round goes
+                  back into the prize pools.
+                </li>
+              </ul>
+              <h4>Rollover Prizes</h4>
+              <ul>
+                <li>
+                  After every round, if nobody wins in one of the prize
+                  brackets, the unclaimed CAKE for that bracket rolls over into
+                  the next round and are redistributed among the prize pools.
+                </li>
+              </ul>
+              <h4>CAKE Injections</h4>
+              <ul>
+                <li>
+                  An average total of 35,000 CAKE from the treasury is added to
+                  lottery rounds over the course of a week. This CAKE is of
+                  course also included in rollovers! Read more in our guide to
+                  CAKE Tokenomics
+                </li>
+              </ul>
+            </div>
+            <div className={styles.chartDiv}>
+              <img src={chart} alt="" />
+              <div className={styles.chartRow}>
+                <p>DIGITS MATCHED</p>
+                <p>PRIZE POOL ALLOCATION</p>
+              </div>
+              <div className={styles.chartRow}>
+                <div className={styles.color}>
+                  <div className={styles.color1}></div>
+                  <h4>Matches first 1</h4>
+                </div>
+                <h5>2%</h5>
+              </div>
+              <div className={styles.chartRow}>
+                <div className={styles.color}>
+                  <div className={styles.color2}></div>
+                  <h4>Matches first 1</h4>
+                </div>
+                <h5>2%</h5>
+              </div>
+              <div className={styles.chartRow}>
+                <div className={styles.color}>
+                  <div className={styles.color3}></div>
+                  <h4>Matches first 1</h4>
+                </div>
+                <h5>2%</h5>
+              </div>
+              <div className={styles.chartRow}>
+                <div className={styles.color}>
+                  <div className={styles.color4}></div>
+                  <h4>Matches first 1</h4>
+                </div>
+                <h5>2%</h5>
+              </div>
+              <div className={styles.chartRow}>
+                <div className={styles.color}>
+                  <div className={styles.color5}></div>
+                  <h4>Matches first 1</h4>
+                </div>
+                <h5>2%</h5>
+              </div>
+              <div className={styles.chartRow}>
+                <div className={styles.color}>
+                  <div className={styles.color6}></div>
+                  <h4>Matches first 1</h4>
+                </div>
+                <h5>2%</h5>
+              </div>
+              <div className={styles.chartRow}>
+                <div className={styles.color}>
+                  <div className={styles.color7}></div>
+                  <h4>Matches first 1</h4>
+                </div>
+                <h5>2%</h5>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

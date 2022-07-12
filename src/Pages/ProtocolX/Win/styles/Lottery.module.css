@@ -687,7 +687,249 @@
   border-top: 1px solid rgb(231, 227, 235);
   width: 100%;
 }
+/* section 5 starts here ------------------------------ */
+.sec5Cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(250, 249, 250);
+  padding: 48px 24px;
+}
+.sec5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  gap: 20px;
+}
+.sec5Head {
+  color: var(--black-color);
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 600;
+}
+.sec5Desc {
+  color: var(--red-color);
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  font-weight: 400;
+  max-width: 700px;
+}
+.cardRow {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  padding-bottom: 2rem;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  background: rgb(255, 255, 255);
+  height: 200px;
+  width: 366px;
+  border-radius: 24px;
+  width: 100%;
+  border: 2px solid rgb(231, 227, 235);
+  gap: 20px;
+  padding-inline: 24px;
+}
+.card p {
+  color: var(--black-color);
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: right;
+  align-self: flex-end;
+}
+.card h4 {
+  color: var(--red-color);
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 600;
+}
+.card h5 {
+  color: var(--black-color);
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 600;
+}
+.criteria {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  gap: 6rem;
+  padding: 3rem 0rem;
+  border-top: 1px solid rgb(231, 227, 235);
+}
+.criteria:last-of-type {
+  border-bottom: 1px solid rgb(231, 227, 235);
+}
+.leftCriteria {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.leftCriteria h3 {
+  color: var(--red-color);
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 600;
+}
+.leftCriteria h4 {
+  color: var(--black-color);
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 600;
+}
+.leftCriteria p,
+.leftCriteria li {
+  color: var(--black-color);
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 400;
+}
+.leftCriteria ul {
+  list-style-position: inside;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+.rightCriteria {
+  width: 100%;
+  padding: 24px;
+  background: rgb(255, 255, 255);
+  border-radius: 24px;
+  height: 210px;
+  max-width: 330px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid rgb(231, 227, 235);
+  border-bottom: none;
+  box-shadow: 0px 3px 0px 1px rgb(231, 227, 235);
+}
+.criRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.criRow h5 {
+  color: var(--black-color);
+  font-size: 20px;
+}
+.rightCriteria .numbers {
+  padding: 0px;
+  width: 90%;
+  align-self: flex-end;
+  justify-content: space-between;
+}
+.rightCriteria .circleDiv {
+  width: 30px;
+  height: 30px;
+}
+.rightCriteria .circleDiv h3 {
+  font-size: 16px;
+}
+.chartDiv {
+  width: 100%;
+  padding: 24px;
+  background: rgb(255, 255, 255);
+  border-radius: 24px;
+  min-height: 400px;
+  max-width: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  border: 1px solid rgb(231, 227, 235);
+  border-bottom: none;
+  box-shadow: 0px 3px 0px 1px rgb(231, 227, 235);
+}
+.chartRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.chartRow p {
+  color: var(--red-color);
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.chartRow h4,
+.chartRow h5 {
+  color: var(--black-color);
+  font-weight: 400;
+  line-height: 1;
+  font-size: 16px;
+}
+.chartRow h5 {
+  font-weight: 600;
+}
+.color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.color div {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+.color1 {
+  background-color: rgb(255, 227, 98);
+}
+.color2 {
+  background-color: rgb(133, 197, 78);
+}
+.color3 {
+  background-color: rgb(2, 142, 117);
+}
+.color4 {
+  background-color: rgb(54, 232, 245);
+}
+.color5 {
+  background-color: rgb(168, 129, 252);
+}
+.color6 {
+  background-color: rgb(215, 80, 178);
+}
+.color7 {
+  background-color: rgb(189, 194, 196);
+}
+
 /* responsive starts here ---------------------------------------- */
+@media screen and (max-width: 966px) {
+  .cardRow {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .criteria {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 @media screen and (max-width: 850px) {
   .sec4 {
     padding-inline: 20px;
