@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 100%;
 }
 .sec1 {
@@ -14,6 +15,7 @@
   isolation: isolate;
   padding-top: 70px;
   height: 500px;
+  overflow: hidden;
 }
 .radial {
   position: absolute;
@@ -24,6 +26,7 @@
   z-index: -1;
   width: 100%;
   object-fit: contain;
+  pointer-events: none;
 }
 .lottery {
   display: flex;
@@ -81,6 +84,45 @@
 .btnDiv button:hover {
   opacity: 0.65;
 }
+.s1,
+.s2,
+.s3,
+.t1,
+.t2 {
+  position: absolute;
+  object-fit: contain;
+  z-index: 0;
+}
+.s2 {
+  top: 0;
+  left: 0;
+  max-width: 70px;
+  animation: move 3.5s ease-in-out infinite alternate;
+}
+.s1 {
+  top: 43%;
+  left: 0;
+  max-width: 100px;
+  animation: move 3s 0.7s ease-in-out infinite alternate;
+}
+.s3 {
+  top: 0%;
+  right: 0;
+  max-width: 130px;
+  animation: move 3s 0.2s ease-in-out infinite alternate;
+}
+.t1 {
+  left: 10%;
+  top: 73%;
+  animation: move2 3s ease-in-out infinite alternate;
+  max-width: 120px;
+}
+.t2 {
+  right: 10%;
+  top: 73%;
+  animation: move2 3s ease-in-out infinite alternate;
+  max-width: 120px;
+}
 @keyframes swing {
   0% {
     transform: rotate(0deg);
@@ -90,5 +132,316 @@
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+@keyframes move {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(10px, 10px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes move2 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(-10px, 15px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+/* section2 starts here ----------------------------------------- */
+.sec2Cont {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%);
+  padding: 48px 20px;
+  width: 100%;
+}
+.sec2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1400px;
+  gap: 2rem;
+}
+.sec2Head {
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+}
+.row h2 {
+  color: white;
+  font-size: 20px;
+  line-height: 1.4;
+}
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 2px;
+}
+.time p,
+.time h1 {
+  background: linear-gradient(rgb(255, 216, 0) 0%, rgb(253, 171, 50) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  line-height: 1;
+}
+.time h1 {
+  font-size: 40px !important;
+}
+.time p {
+  line-height: 1.4 !important;
+  font-size: 20px !important;
+}
+.drawBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 755px;
+  background: rgb(255, 255, 255);
+  border-radius: 24px;
+  overflow: hidden;
+}
+.drawHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(
+    111.68deg,
+    rgb(242, 236, 242) 0%,
+    rgb(232, 242, 246) 100%
+  );
+  padding: 16px 24px;
+  width: 100%;
+}
+.drawHead h2,
+.rowPrize h2 {
+  color: var(--black-color);
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 600;
+}
+.drawHead p {
+  color: var(--black-color);
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 400;
+}
+.drawPrize {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 175px;
+  padding: 24px;
+  width: 100%;
+  background-color: white;
+  gap: 30px;
+}
+.rowPrize {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+}
+.col {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.col h1,
+.col p {
+  color: var(--red-color);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1;
+}
+.col p {
+  font-weight: 400 !important;
+  font-size: 14px !important;
+}
+.hideBtn {
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  color: var(--red-color);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 20px 0px;
+  border-top: 2px solid rgb(231, 227, 235);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  user-select: none;
+  cursor: pointer;
+}
+.hiddenBox {
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  background-color: rgb(250, 249, 250);
+  padding: 20px 24px;
+  width: 100%;
+  border-top: 1px solid rgb(231, 227, 235);
+  display: none;
+}
+.display {
+  display: flex;
+}
+.rotate {
+  transform: rotate(180deg);
+}
+.hiddenBox p {
+  color: var(--black-color);
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+.lotGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+}
+.lotCol {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+.lotCol h2 {
+  color: var(--red-color);
+  font-weight: 600;
+  line-height: 1;
+  font-size: 16px;
+}
+.lotCol h1 {
+  color: var(--black-color);
+  font-weight: 600;
+  line-height: 1;
+  font-size: 20px;
+}
+.lotCol p {
+  color: var(--black-color);
+  font-weight: 400;
+  line-height: 1;
+  font-size: 14px;
+}
+/* section 3 starts here ------------------------- */
+.sec3Cont {
+  background: linear-gradient(
+    139.73deg,
+    rgb(49, 61, 92) 0%,
+    rgb(61, 42, 84) 100%
+  );
+  padding: 68px 0px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.sec3 {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.sec3 img {
+  max-width: 120px;
+  object-fit: contain;
+}
+.sec3 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.sec3 h2 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  color: white;
+  max-width: 250px;
+  text-align: center;
+}
+/* responsive starts here ---------------------------------------- */
+@media screen and (max-width: 850px) {
+  .s1,
+  .s2,
+  .s3,
+  .t1,
+  .t2 {
+    display: none;
+  }
+  .drawBox {
+    width: 100%;
+  }
+  .drawPrize {
+    align-items: center;
+    height: auto;
+  }
+  .rowPrize {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 546px) {
+  .lotGrid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: none;
+    grid-auto-rows: 1fr;
+  }
+  .sec2Head {
+    font-size: 30px;
+  }
+  .drawHead h2 {
+    font-size: 14px;
+  }
+  .drawHead p {
+    font-size: 14px;
+  }
+  .sec3 {
+    gap: 0px;
+  }
+  .sec3 img {
+    max-width: 50px;
   }
 }
