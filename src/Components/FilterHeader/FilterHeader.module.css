@@ -87,7 +87,9 @@
   text-align: center;
   user-select: none;
 }
-
+.finishSwitch h2:active {
+  transform: scale(0.9);
+}
 .finishSwitch .activeLive {
   background-color: rgb(122, 110, 170);
   color: rgb(255, 255, 255);

@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import {
+  faChevronDown,
+  faArrowLeft,
+  faArrowRight,
+} from "@fortawesome/free-solid-svg-icons";
 
 import styles from "./styles/Lottery.module.css";
 import ticket from "../../../Assets/lottery/ticket.svg";
@@ -11,54 +15,70 @@ import s3 from "../../../Assets/lottery/s3.png";
 import t1 from "../../../Assets/lottery/t1.png";
 import t2 from "../../../Assets/lottery/t2.png";
 import radialGr from "../../../Assets/radialGr.svg";
+import circ1 from "../../../Assets/circles/circ1.svg";
+import circ2 from "../../../Assets/circles/circ2.svg";
+import circ3 from "../../../Assets/circles/circ3.svg";
+import circ4 from "../../../Assets/circles/circ4.svg";
+import circ5 from "../../../Assets/circles/circ5.svg";
+import circ6 from "../../../Assets/circles/circ6.svg";
 
-function LotteryCol({ head, desc, sub }) {
+function LotteryCol({ head, desc, sub, his, tickets }) {
   return (
     <div className={styles.lotCol}>
       <h2>{head}</h2>
       <h1>{desc}</h1>
       <p>{sub}</p>
+      {his && <p>{tickets}</p>}
     </div>
   );
 }
 
 function Lottery() {
   const [box1, setBox1] = useState(false);
+  const [box2, setBox2] = useState(false);
+  const [liveSwitch, setLiveSwitch] = useState(false);
   const data = [
     {
       head: "Match first 1",
       desc: "648 CAKE",
       sub: "~$1,894",
+      tickets: "2.78 CAKE each 193 Winning Tickets",
     },
     {
       head: "Match first 2",
       desc: "648 CAKE",
       sub: "~$1,894",
+      tickets: "2.78 CAKE each 193 Winning Tickets",
     },
     {
       head: "Match first 3",
       desc: "648 CAKE",
       sub: "~$1,894",
+      tickets: "2.78 CAKE each 193 Winning Tickets",
     },
     {
       head: "Match first 4",
       desc: "648 CAKE",
       sub: "~$1,894",
+      tickets: "2.78 CAKE each 193 Winning Tickets",
     },
     {
       head: "Match first 5",
       desc: "648 CAKE",
       sub: "~$1,894",
+      tickets: "2.78 CAKE each 193 Winning Tickets",
     },
     {
       head: "Match first 6",
       desc: "648 CAKE",
       sub: "~$1,894",
+      tickets: "2.78 CAKE each 193 Winning Tickets",
     },
     {
       head: "Burn",
       desc: "648 CAKE",
       sub: "~$1,894",
+      tickets: "2.78 CAKE each 193 Winning Tickets",
     },
   ];
 
@@ -149,6 +169,126 @@ function Lottery() {
             <Button text={"Connect Wallet"} />
           </div>
           <img src={t2} alt="" />
+        </div>
+      </div>
+      <div className={styles.sec4Cont}>
+        <div className={styles.sec4}>
+          <h1 className={styles.sec4Head}>Finished Rounds</h1>
+          <div className={styles.finishSwitch}>
+            <h2
+              onClick={() => setLiveSwitch(false)}
+              className={`${!liveSwitch && styles.activeLive}`}
+            >
+              All History
+            </h2>
+            <h2
+              onClick={() => setLiveSwitch(true)}
+              className={`${liveSwitch && styles.activeLive}`}
+            >
+              Your History
+            </h2>
+          </div>
+          {liveSwitch ? (
+            <div className={styles.drawBox}>
+              <div className={styles.drawHead}>
+                <h2>Round</h2>
+              </div>
+              <div className={styles.yourMidBox}>
+                <p>No History Found</p>
+                <h3>Buy tickets for the next round!</h3>
+                <Button text={"Buy Tickets"} />
+              </div>
+              <div className={styles.bottomYourBox}>
+                Only showing data for Lottery V2
+              </div>
+            </div>
+          ) : (
+            <div className={styles.hisBox}>
+              <div className={styles.topHisBox}>
+                <div className={styles.leftHisBox}>
+                  <h1>
+                    Round <input type="number" />
+                  </h1>
+                  <p>Drawn Jul 11, 2022, 5:00 AM</p>
+                </div>
+                <div className={styles.rightHisBox}>
+                  <FontAwesomeIcon icon={faArrowLeft} />
+                  <FontAwesomeIcon icon={faArrowRight} />
+                  <FontAwesomeIcon
+                    className={styles.line}
+                    icon={faArrowRight}
+                  />
+                </div>
+              </div>
+              <div className={styles.hisBoxMid}>
+                <h2>Winning Number</h2>
+                <div className={styles.numbers}>
+                  <div className={styles.circleDiv}>
+                    <img src={circ1} alt="" />
+                    <h3>0</h3>
+                  </div>
+                  <div className={styles.circleDiv}>
+                    <img src={circ2} alt="" />
+                    <h3>9</h3>
+                  </div>
+                  <div className={styles.circleDiv}>
+                    <img src={circ3} alt="" />
+                    <h3>9</h3>
+                  </div>
+                  <div className={styles.circleDiv}>
+                    <img src={circ4} alt="" />
+                    <h3>9</h3>
+                  </div>
+                  <div className={styles.circleDiv}>
+                    <img src={circ5} alt="" />
+                    <h3>1</h3>
+                  </div>
+                  <div className={styles.circleDiv}>
+                    <img src={circ6} alt="" />
+                    <h3>5</h3>
+                  </div>
+                </div>
+                <div className={styles.latest}>
+                  <p>Latest</p>
+                </div>
+              </div>
+
+              <div
+                className={`${styles.hiddenBoxHis} ${box2 && styles.display}`}
+              >
+                <div className={styles.leftHiddenBox}>
+                  <div className={styles.colBox}>
+                    <h2>Prize Pot</h2>
+                    <h1>~$78,358</h1>
+                    <p>26,846 CAKE</p>
+                  </div>
+                  <p>Total players this round: 397</p>
+                </div>
+                <div className={styles.rightHiddenBox}>
+                  <p>
+                    Match the winning number in the same order to share prizes.
+                  </p>
+                  <div className={styles.lotGrid}>
+                    {data.map((elem, key) => {
+                      return <LotteryCol {...elem} his key={"his" + key} />;
+                    })}
+                  </div>
+                </div>
+              </div>
+              <p
+                onClick={() => {
+                  setBox2((prev) => !prev);
+                }}
+                className={`${styles.hideBtn}`}
+              >
+                {box2 ? "Hide" : "Details"}{" "}
+                <FontAwesomeIcon
+                  className={`${box2 && styles.rotate}`}
+                  icon={faChevronDown}
+                />
+              </p>
+            </div>
+          )}
         </div>
       </div>
     </div>

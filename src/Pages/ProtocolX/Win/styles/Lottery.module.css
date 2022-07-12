@@ -218,7 +218,8 @@
   line-height: 1.4 !important;
   font-size: 20px !important;
 }
-.drawBox {
+.drawBox,
+.hisBox {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -239,6 +240,7 @@
   );
   padding: 16px 24px;
   width: 100%;
+  height: 70px;
 }
 .drawHead h2,
 .rowPrize h2 {
@@ -314,9 +316,7 @@
   border-top: 1px solid rgb(231, 227, 235);
   display: none;
 }
-.display {
-  display: flex;
-}
+
 .rotate {
   transform: rotate(180deg);
 }
@@ -400,8 +400,298 @@
   max-width: 250px;
   text-align: center;
 }
+/* section 4 starts here -------------------- */
+.sec4Cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: linear-gradient(rgb(203, 215, 239) 0%, rgb(154, 159, 208) 100%);
+  height: auto;
+  padding: 4rem 0rem;
+}
+.sec4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+.sec4Head {
+  font-size: 40px;
+  color: var(--black-color);
+  line-height: 1;
+  font-weight: 600;
+}
+.finishSwitch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(238, 234, 244);
+  border: 1px solid rgb(215, 202, 236);
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  max-width: 250px;
+}
+.finishSwitch h2 {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(122, 110, 170);
+  padding: 5px 12px;
+  text-align: center;
+  user-select: none;
+}
+.finishSwitch h2:active {
+  transform: scale(0.9);
+}
+.finishSwitch .activeLive {
+  background-color: rgb(122, 110, 170);
+  color: rgb(255, 255, 255);
+  border-radius: 16px;
+}
+
+.topHisBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 24px;
+}
+.leftHisBox {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+.leftHisBox h1 {
+  color: var(--black-color);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.leftHisBox input {
+  background-color: rgb(238, 234, 244);
+  border-radius: 16px;
+  box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+  color: rgb(40, 13, 95);
+  display: block;
+  font-size: 16px;
+  height: 100%;
+  padding: 4px 16px;
+  outline: 0px;
+  width: 60px;
+  border: 1px solid rgb(215, 202, 236);
+}
+/* Chrome, Safari, Edge, Opera */
+.leftHisBox input::-webkit-outer-spin-button,
+.leftHisBox input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.leftHisBox input[type="number"] {
+  -moz-appearance: textfield;
+}
+.leftHisBox p {
+  color: var(--black-color);
+  font-weight: 400;
+  line-height: 1;
+  font-size: 14px;
+}
+.rightHisBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.rightHisBox svg {
+  color: var(--black-color);
+  cursor: pointer;
+  font-size: 16px;
+}
+.rightHisBox .line {
+  padding-right: 5px;
+  border-right: 2px solid var(--black-color);
+}
+.hisBoxMid {
+  padding: 24px;
+  border-top: 2px solid rgb(231, 227, 235);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  width: 100%;
+  min-height: 120px;
+  overflow: hidden;
+}
+.hisBoxMid h2,
+.colBox h2 {
+  color: var(--black-color);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1;
+}
+.numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-right: 40px;
+}
+.circleDiv {
+  position: relative;
+  width: 71px;
+  height: 71px;
+}
+.circleDiv img {
+  max-width: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.circleDiv h3 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  color: rgb(0, 0, 0);
+  text-shadow: white -0.75px -0.75px 0px, white 0.75px -0.75px 0px,
+    white -0.75px 0.75px 0px, white 0.75px 0.75px 0px;
+  font-weight: 600;
+  line-height: 1;
+  font-size: 42px;
+}
+.latest {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 9;
+  background-color: rgb(118, 69, 217);
+  color: white;
+  padding: 8px 0px;
+  text-align: center;
+  transform: translateX(43%) translateY(-38%) rotate(45deg);
+  transform-origin: left top;
+  width: 96px;
+}
+.latest p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 96px;
+}
+.latest::before,
+.latest::after {
+  background-color: rgb(118, 69, 217);
+  content: "";
+  height: 100%;
+  margin: 0px -1px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+.latest::before {
+  right: 100%;
+}
+.latest::after {
+  left: 100%;
+}
+.hiddenBoxHis {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-top: 2px solid rgb(231, 227, 235);
+  height: 375px;
+  background: rgb(250, 249, 250);
+  padding: 24px;
+  gap: 20px;
+}
+.leftHiddenBox {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100%;
+  flex: 0.2;
+}
+.colBox {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 5px;
+}
+.colBox h1 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--red-color);
+}
+.colBox p,
+.leftHiddenBox p,
+.rightHiddenBox p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--black-color);
+}
+.rightHiddenBox {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  flex: 0.8;
+  gap: 2rem;
+}
+.yourMidBox {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  min-height: 240px;
+  height: auto;
+  width: 100%;
+}
+.yourMidBox p {
+  color: var(--black-color);
+  font-weight: 400;
+  line-height: 1;
+  font-size: 16px;
+  text-align: center;
+}
+.yourMidBox h3 {
+  color: var(--red-color);
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  font-size: 16px;
+}
+.bottomYourBox {
+  color: var(--red-color);
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  font-size: 12px;
+  padding: 24px;
+  border-top: 1px solid rgb(231, 227, 235);
+  width: 100%;
+}
 /* responsive starts here ---------------------------------------- */
 @media screen and (max-width: 850px) {
+  .sec4 {
+    padding-inline: 20px;
+  }
   .s1,
   .s2,
   .s3,
@@ -409,7 +699,8 @@
   .t2 {
     display: none;
   }
-  .drawBox {
+  .drawBox,
+  .hisBox {
     width: 100%;
   }
   .drawPrize {
@@ -421,6 +712,38 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+  }
+  .hisBoxMid {
+    gap: 20px;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hiddenBoxHis {
+    flex-direction: column;
+    height: auto;
+  }
+  .leftHiddenBox,
+  .rightHiddenBox {
+    flex: none;
+    width: 100%;
+    height: auto;
+  }
+  .leftHiddenBox {
+    margin-bottom: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .numbers {
+    padding: 0px;
+  }
+  .circleDiv {
+    width: 40px;
+    height: 40px;
+  }
+  .circleDiv h3 {
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 546px) {
@@ -444,4 +767,8 @@
   .sec3 img {
     max-width: 50px;
   }
+}
+/* util ------------------- */
+.display {
+  display: flex;
 }
