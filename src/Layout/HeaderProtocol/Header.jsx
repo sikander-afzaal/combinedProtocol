@@ -49,11 +49,11 @@ function Header() {
             </div>
           </div>
           <div className={`${styles.navLink}  ${styles.navLink3}`}>
-            <Link className={styles.mainNav} to={"/PancakeSwap"}>
+            <Link className={styles.mainNav} to={"/PancakeSwap/Win/Lottery"}>
               Win
             </Link>
             <div className={`${styles.dropMenu} ${styles.dropMenu3}`}>
-              <Link to={"/PancakeSwap"}>Lottery</Link>
+              <Link to={"/PancakeSwap/Win/Lottery"}>Lottery</Link>
             </div>
           </div>
           {/* <div className={`${styles.navLink}  ${styles.navLink4}`}>
@@ -204,7 +204,7 @@ function Header() {
               menu === "WIN" ? styles.openMenu : ""
             }`}
           >
-            <Link to={"/PancakeSwap"}>Lottery</Link>
+            <Link to={"/PancakeSwap/Win/Lottery"}>Lottery</Link>
           </div>
         </div>
         {/* <div

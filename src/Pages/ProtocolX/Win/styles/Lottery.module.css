@@ -1,0 +1,94 @@
+.lotteryCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.sec1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  background: linear-gradient(rgb(118, 69, 217) 0%, rgb(69, 42, 122) 100%);
+  isolation: isolate;
+  padding-top: 70px;
+  height: 500px;
+}
+.radial {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  z-index: -1;
+  width: 100%;
+  object-fit: contain;
+}
+.lottery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+  position: relative;
+}
+.lottery h2 {
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 600;
+  color: white;
+}
+.lottery h1 {
+  background: linear-gradient(to top, rgb(255, 216, 0), rgb(235, 140, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  line-height: 1;
+  font-size: 64px;
+}
+.btnDiv {
+  position: relative;
+  animation: swing 3s ease-in-out infinite alternate;
+}
+.btnDiv img {
+  width: 300px;
+  object-fit: contain;
+  transform: rotate(-6deg);
+}
+.btnDiv button {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-6deg);
+  width: 240px;
+  background: linear-gradient(rgb(118, 69, 217) 0%, rgb(69, 42, 122) 100%);
+  height: 48px;
+  color: white;
+  border-radius: 10px;
+  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+.btnDiv button:hover {
+  opacity: 0.65;
+}
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(6deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
