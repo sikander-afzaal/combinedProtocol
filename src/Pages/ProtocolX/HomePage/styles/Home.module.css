@@ -2,7 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  gap: 20px;
+  height: max(100vh, 500px);
+  background-color: var(--black-color);
+}
+.home a {
+  text-decoration: none;
 }
 .heroBg {
   padding-top: 100px;

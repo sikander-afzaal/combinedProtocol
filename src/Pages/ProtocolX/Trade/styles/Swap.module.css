@@ -33,6 +33,7 @@
 }
 .cardHeader > p {
   font-size: 14px;
+  color: var(--red-color);
 }
 .cardHeaderTop {
   display: flex;
@@ -42,7 +43,7 @@
 }
 .cardHeaderTop > h1 {
   font-size: 20px;
-  color: var(--dark-purple);
+  color: var(--red-color);
   font-weight: 600;
 }
 .graphIcon {
@@ -88,7 +89,7 @@
   height: 60px;
   border-radius: 1rem;
   font-size: 1rem;
-  color: gray;
+  color: var(--black-color);
   text-align: end;
   padding-right: 1rem;
 }

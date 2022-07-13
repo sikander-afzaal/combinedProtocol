@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 
 import Header from "../../Layout/HeaderProtocol/Header";
-import Footer from "../../Layout/FooterProtocol/Footer";
+// import Footer from "../../Layout/FooterProtocol/Footer";
 import Home from "./HomePage/Home";
 import Trade from "./Trade/Trade";
 import Earn from "./Earn/Earn";
@@ -18,7 +18,7 @@ function App() {
         <Route path={"/Earn/*"} element={<Earn />} />
         <Route path={"/Win/*"} element={<Win />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
