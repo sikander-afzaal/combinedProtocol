@@ -187,7 +187,7 @@
 .hiddenSwitch {
   text-align: center;
   width: 100%;
-  color: var(--button-bg);
+  color: var(--red-color);
   font-size: 16px;
   font-weight: 600;
   line-height: 1;
@@ -207,7 +207,7 @@
   margin-top: 20px;
 }
 .hidden a {
-  color: var(--button-bg);
+  color: var(--red-color);
   font-size: 16px;
   font-weight: 500;
   line-height: 1;

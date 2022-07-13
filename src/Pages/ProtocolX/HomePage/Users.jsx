@@ -27,7 +27,7 @@ function Users() {
           <UserBox
             head={"2.3 million"}
             span={"users"}
-            color={"var(--light-purple)"}
+            color={"var(--black-color)"}
             desc={"in the last 30 days"}
             icon={faUsers}
           />

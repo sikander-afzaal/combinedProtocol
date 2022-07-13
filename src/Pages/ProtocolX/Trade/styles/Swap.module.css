@@ -137,7 +137,7 @@
   opacity: 0;
 }
 .switchBtn:hover {
-  background-color: var(--button-bg);
+  background-color: var(--red-color);
 }
 .switchBtn:hover .hoverIcon {
   opacity: 1;
@@ -156,7 +156,7 @@
   font-weight: 500;
 }
 .stValue {
-  color: var(--button-bg);
+  color: var(--red-color);
   font-weight: 600;
 }
 .button {

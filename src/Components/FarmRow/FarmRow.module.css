@@ -101,6 +101,7 @@
   font-size: 16px;
 }
 .farmRowTop svg {
+  color: var(--black-color);
   transition: all 0.6s ease-in-out;
 }
 .rowCol svg,
@@ -139,7 +140,7 @@
   min-width: 250px;
 }
 .rowLinks a {
-  color: var(--button-bg);
+  color: var(--red-color);
   font-size: 16px;
   font-weight: 500;
   line-height: 1;
