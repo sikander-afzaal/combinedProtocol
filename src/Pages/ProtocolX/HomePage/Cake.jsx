@@ -11,14 +11,14 @@ function Cake() {
       <div className={styles.cake}>
         <div className={styles.leftCake}>
           <h1>
-            <span>CAKE</span> makes our world <br /> go round.
+            <span>PTX</span> makes our world <br /> go round.
           </h1>
           <p>
-            CAKE token is at the heart of the PancakeSwap ecosystem. Buy it, win
+            PTX token is at the heart of the PanPTXSwap ecosystem. Buy it, win
             it, farm it, spend it, stake it... heck, you can even vote with it!
           </p>
           <div className={styles.btnDiv}>
-            <Button text={"Buy CAKE"} />
+            <Button text={"Buy PTX"} />
             <a href="#">Learn</a>
           </div>
         </div>

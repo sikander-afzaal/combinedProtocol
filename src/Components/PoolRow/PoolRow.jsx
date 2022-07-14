@@ -116,7 +116,7 @@ function PoolRow({
             <p style={{ borderBottom: "1px dashed var(--light-purple)" }}>
               Total Staked
             </p>
-            <p>{totalStaked} CAKE</p>
+            <p>{totalStaked} PTX</p>
           </div>
           <a href={tokenInfo}>
             See Token Info <img src={goTo} alt="" />
@@ -148,7 +148,7 @@ function PoolRow({
         </div>
         <div className={styles.btnDiv}>
           <div className={styles.earnedDiv}>
-            <h5>Recent Cake Profit </h5>
+            <h5>Recent PTX Profit </h5>
             <p>{profit}</p>
           </div>
           <div className={styles.earnedDiv}>

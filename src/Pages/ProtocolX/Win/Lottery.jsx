@@ -43,45 +43,45 @@ function Lottery() {
   const data = [
     {
       head: "Match first 1",
-      desc: "648 CAKE",
+      desc: "648 PTX",
       sub: "~$1,894",
-      tickets: "2.78 CAKE each 193 Winning Tickets",
+      tickets: "2.78 PTX each 193 Winning Tickets",
     },
     {
       head: "Match first 2",
-      desc: "648 CAKE",
+      desc: "648 PTX",
       sub: "~$1,894",
-      tickets: "2.78 CAKE each 193 Winning Tickets",
+      tickets: "2.78 PTX each 193 Winning Tickets",
     },
     {
       head: "Match first 3",
-      desc: "648 CAKE",
+      desc: "648 PTX",
       sub: "~$1,894",
-      tickets: "2.78 CAKE each 193 Winning Tickets",
+      tickets: "2.78 PTX each 193 Winning Tickets",
     },
     {
       head: "Match first 4",
-      desc: "648 CAKE",
+      desc: "648 PTX",
       sub: "~$1,894",
-      tickets: "2.78 CAKE each 193 Winning Tickets",
+      tickets: "2.78 PTX each 193 Winning Tickets",
     },
     {
       head: "Match first 5",
-      desc: "648 CAKE",
+      desc: "648 PTX",
       sub: "~$1,894",
-      tickets: "2.78 CAKE each 193 Winning Tickets",
+      tickets: "2.78 PTX each 193 Winning Tickets",
     },
     {
       head: "Match first 6",
-      desc: "648 CAKE",
+      desc: "648 PTX",
       sub: "~$1,894",
-      tickets: "2.78 CAKE each 193 Winning Tickets",
+      tickets: "2.78 PTX each 193 Winning Tickets",
     },
     {
       head: "Burn",
-      desc: "648 CAKE",
+      desc: "648 PTX",
       sub: "~$1,894",
-      tickets: "2.78 CAKE each 193 Winning Tickets",
+      tickets: "2.78 PTX each 193 Winning Tickets",
     },
   ];
 
@@ -95,7 +95,7 @@ function Lottery() {
           <img src={s3} className={styles.s3} alt="" />
           <img src={t1} className={styles.t1} alt="" />
           <img src={t2} className={styles.t2} alt="" />
-          <h2>The Pancake Swap Lottery</h2>
+          <h2>The PanPTX Swap Lottery</h2>
           <h1>$94,122</h1>
           <h2>in prizes</h2>
           <div className={styles.btnDiv}>
@@ -130,7 +130,7 @@ function Lottery() {
                 <h2>Prize Pot</h2>
                 <div className={styles.col}>
                   <h1>~$94,237</h1>
-                  <p>32,378 CAKE</p>
+                  <p>32,378 PTX</p>
                 </div>
               </div>
               <div className={styles.rowPrize}>
@@ -263,7 +263,7 @@ function Lottery() {
                   <div className={styles.colBox}>
                     <h2>Prize Pot</h2>
                     <h1>~$78,358</h1>
-                    <p>26,846 CAKE</p>
+                    <p>26,846 PTX</p>
                   </div>
                   <p>Total players this round: 397</p>
                 </div>
@@ -306,7 +306,7 @@ function Lottery() {
               <p>Step 1</p>
               <h4>Buy Tickets</h4>
               <h5>
-                Prices are set when the round starts, equal to 5 USD in CAKE per
+                Prices are set when the round starts, equal to 5 USD in PTX per
                 ticket.
               </h5>
             </div>
@@ -397,7 +397,7 @@ function Lottery() {
               <h4>Ticket Purchases</h4>
               <ul>
                 <li>
-                  100% of the CAKE paid by people buying tickets that round goes
+                  100% of the PTX paid by people buying tickets that round goes
                   back into the prize pools.
                 </li>
               </ul>
@@ -405,17 +405,17 @@ function Lottery() {
               <ul>
                 <li>
                   After every round, if nobody wins in one of the prize
-                  brackets, the unclaimed CAKE for that bracket rolls over into
+                  brackets, the unclaimed PTX for that bracket rolls over into
                   the next round and are redistributed among the prize pools.
                 </li>
               </ul>
-              <h4>CAKE Injections</h4>
+              <h4>PTX Injections</h4>
               <ul>
                 <li>
-                  An average total of 35,000 CAKE from the treasury is added to
-                  lottery rounds over the course of a week. This CAKE is of
+                  An average total of 35,000 PTX from the treasury is added to
+                  lottery rounds over the course of a week. This PTX is of
                   course also included in rollovers! Read more in our guide to
-                  CAKE Tokenomics
+                  PTX Tokenomics
                 </li>
               </ul>
             </div>

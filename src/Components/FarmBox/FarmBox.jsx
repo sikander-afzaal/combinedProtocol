@@ -58,11 +58,11 @@ function FarmBox({
         </div>
         <div className={styles.detailRow}>
           <p>Earn:</p>
-          <h5>CAKE + Fees</h5>
+          <h5>PTX + Fees</h5>
         </div>
       </div>
       <div className={styles.earnedDiv}>
-        <h5>Cake Earned</h5>
+        <h5>PTX Earned</h5>
         <div className={styles.earnRow}>
           <p>{cakeEarned}</p>
           <button className={styles.harvest}>HARVEST</button>
@@ -88,7 +88,7 @@ function FarmBox({
           <h5>{liquidity}</h5>
         </div>
         <a href={getUrl}>
-          Get CAKE-BNB LP <img src={goTo} alt="" />
+          Get PTX-BNB LP <img src={goTo} alt="" />
         </a>
         <a href={contractUrl}>
           View Contract

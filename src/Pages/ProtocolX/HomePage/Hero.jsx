@@ -6,7 +6,7 @@ function Hero() {
   return (
     <div className={styles.hero}>
       <div className={styles.leftHero}>
-        <h1>The moon is made of pancakes.</h1>
+        <h1>The moon is made of panPTXs.</h1>
         <p>
           Trade, earn, and win crypto on the most popular decentralized platform
           in the galaxy.

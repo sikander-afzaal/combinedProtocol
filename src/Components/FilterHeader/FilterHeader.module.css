@@ -57,7 +57,7 @@
 }
 
 .toggleSwitch input:checked + label {
-  background: var(--button-bg);
+  background: var(--red-color);
 }
 
 .toggleSwitch input:checked + label:after {
@@ -82,7 +82,7 @@
 .finishSwitch h2 {
   font-size: 16px;
   font-weight: 500;
-  color: rgb(122, 110, 170);
+  color: var(--black-color);
   padding: 5px 12px;
   text-align: center;
   user-select: none;
@@ -91,7 +91,7 @@
   transform: scale(0.9);
 }
 .finishSwitch .activeLive {
-  background-color: rgb(122, 110, 170);
+  background-color: var(--light-red);
   color: rgb(255, 255, 255);
   border-radius: 16px;
 }
@@ -113,7 +113,8 @@
 }
 .rightCol h3 {
   cursor: pointer;
-  background: rgb(238, 234, 244);
+  background: white;
+  border: 1px solid var(--black-color);
   border-radius: 16px;
   height: 40px;
   width: 168px;
@@ -134,7 +135,7 @@
   left: 0;
   height: auto;
   width: 168px;
-  background-color: rgb(238, 234, 244);
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -145,6 +146,8 @@
   max-height: 0px;
   transition: all 0.3s ease-in-out;
   z-index: 3;
+  border: 1px solid var(--black-color);
+  border-top: none;
 }
 .activeAuction {
   opacity: 1;
@@ -155,15 +158,17 @@
   padding: 15px 10px;
   width: 100%;
   cursor: pointer;
+  color: var(--black-color);
 }
 .auctionDrop h4:hover {
-  background-color: rgb(215, 202, 236);
+  background-color: var(--light-red);
+  color: white;
 }
 .rightCol .activeDrop {
   border-radius: 16px 16px 0px 0px;
 }
 .rightCol input {
-  background-color: rgb(238, 234, 244);
+  background-color: white;
   border-radius: 16px;
   box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
   color: var(--dark-purple);
@@ -173,7 +178,7 @@
   outline: 0px;
   padding: 0px 16px;
   width: 100%;
-  border: 1px solid rgb(215, 202, 236);
+  border: 1px solid var(--black-color);
 }
 @media screen and (max-width: 866px) {
   .auctionHeader {

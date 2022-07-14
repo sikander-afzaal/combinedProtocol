@@ -85,7 +85,7 @@ function FarmRow({
       >
         <div className={styles.rowLinks}>
           <a href={getUrl}>
-            Get CAKE-BNB LP <img src={goTo} alt="" />
+            Get PTX-BNB LP <img src={goTo} alt="" />
           </a>
           <a href={contractUrl}>
             View Contract
@@ -97,7 +97,7 @@ function FarmRow({
         </div>
         <div className={styles.btnDiv}>
           <div className={styles.earnedDiv}>
-            <h5>Cake Earned</h5>
+            <h5>PTX Earned</h5>
             <div className={styles.earnRow}>
               <p>{cakeEarned}</p>
               <button className={styles.harvest}>HARVEST</button>

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import styles from "./styles/Farms.module.css";
 import FilterHeader from "../../../Components/FilterHeader/FilterHeader";
 import smallIco from "../../../Assets/bnb.svg";
-import small from "../../../Assets/small-ico.svg";
+import small from "../../../Assets/logo-mob.png";
 import FarmRow from "../../../Components/FarmRow/FarmRow";
 import FarmBox from "../../../Components/FarmBox/FarmBox";
 
@@ -25,8 +25,8 @@ function Farms() {
       contractUrl: "#",
       getUrl: "#",
       pairInfoUrl: "#",
-      cakeEarned: 0,
-      name: "Cake-Bnb",
+      PTXEarned: 0,
+      name: "PTX-Bnb",
     },
     {
       icon: smallIco,
@@ -39,8 +39,8 @@ function Farms() {
       contractUrl: "#",
       getUrl: "#",
       pairInfoUrl: "#",
-      cakeEarned: 0,
-      name: "Cake-Bnb",
+      PTXEarned: 0,
+      name: "PTX-Bnb",
     },
     {
       icon: smallIco,
@@ -53,8 +53,8 @@ function Farms() {
       contractUrl: "#",
       getUrl: "#",
       pairInfoUrl: "#",
-      cakeEarned: 0,
-      name: "Cake-Bnb",
+      PTXEarned: 0,
+      name: "PTX-Bnb",
     },
     {
       icon: smallIco,
@@ -67,8 +67,8 @@ function Farms() {
       contractUrl: "#",
       getUrl: "#",
       pairInfoUrl: "#",
-      cakeEarned: 0,
-      name: "Cake-Bnb",
+      PTXEarned: 0,
+      name: "PTX-Bnb",
     },
     {
       icon: smallIco,
@@ -81,8 +81,8 @@ function Farms() {
       contractUrl: "#",
       getUrl: "#",
       pairInfoUrl: "#",
-      cakeEarned: 0,
-      name: "Cake-Bnb",
+      PTXEarned: 0,
+      name: "PTX-Bnb",
     },
     {
       icon: smallIco,
@@ -95,8 +95,8 @@ function Farms() {
       contractUrl: "#",
       getUrl: "#",
       pairInfoUrl: "#",
-      cakeEarned: 0,
-      name: "Cake-Bnb",
+      PTXEarned: 0,
+      name: "PTX-Bnb",
     },
     {
       icon: smallIco,
@@ -109,8 +109,8 @@ function Farms() {
       contractUrl: "#",
       getUrl: "#",
       pairInfoUrl: "#",
-      cakeEarned: 0,
-      name: "Cake-Bnb",
+      PTXEarned: 0,
+      name: "PTX-Bnb",
     },
     {
       icon: smallIco,
@@ -123,8 +123,8 @@ function Farms() {
       contractUrl: "#",
       getUrl: "#",
       pairInfoUrl: "#",
-      cakeEarned: 0,
-      name: "Cake-Bnb",
+      PTXEarned: 0,
+      name: "PTX-Bnb",
     },
     {
       icon: smallIco,
@@ -137,8 +137,8 @@ function Farms() {
       contractUrl: "#",
       getUrl: "#",
       pairInfoUrl: "#",
-      cakeEarned: 0,
-      name: "Cake-Bnb",
+      PTXEarned: 0,
+      name: "PTX-Bnb",
     },
   ];
 

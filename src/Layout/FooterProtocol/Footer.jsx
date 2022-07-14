@@ -124,7 +124,7 @@ function Footer() {
             <img src={small} alt="" className={styles.small} />
             <p>$3.54</p>
           </div>
-          <Button arrow text={"Buy Cake"} />
+          <Button arrow text={"Buy PTX"} />
         </div>
       </div>
     </div>

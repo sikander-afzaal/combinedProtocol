@@ -92,7 +92,7 @@ function PoolBox({
         </div>
         <div className={styles.rowCol}>
           <p>Total Staked</p>
-          <p>{totalStaked} CAKE</p>
+          <p>{totalStaked} PTX</p>
         </div>
         <a href={tokenInfo}>
           See Token Info <img src={goTo} alt="" />

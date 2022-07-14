@@ -71,23 +71,23 @@ function Earn() {
               className={styles.switchDiv}
             >
               <div className={styles.switchCol}>
-                <h4> Stake CAKE </h4>
+                <h4> Stake PTX </h4>
                 <h2>Up to 86.618%</h2>
                 <p>APR</p>
               </div>
               <div className={styles.switchCol}>
-                <h4>Stake CAKE - Earn ANTEX</h4>
+                <h4>Stake PTX - Earn ANTEX</h4>
                 <h2>12.333%</h2>
                 <p>APR</p>
               </div>
               <div className={styles.switchCol}>
-                <h4>Stake CAKE - Earn OLE</h4>
+                <h4>Stake PTX - Earn OLE</h4>
               </div>
               <div className={styles.switchCol}>
-                <h4>Stake CAKE - Earn TRIVIA</h4>
+                <h4>Stake PTX - Earn TRIVIA</h4>
               </div>
               <div className={styles.switchCol}>
-                <h4>Stake CAKE - Earn SDAO</h4>
+                <h4>Stake PTX - Earn SDAO</h4>
               </div>
             </motion.div>
           ) : (

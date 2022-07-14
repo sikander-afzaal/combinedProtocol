@@ -11,7 +11,7 @@ function Prizes() {
           <span>Win</span> millions in prizes
         </h1>
         <p className={styles.prizeDesc}>
-          Provably fair, on-chain games. Win big with PancakeSwap.
+          Provably fair, on-chain games. Win big with PanPTXSwap.
         </p>
         <div className={styles.boxRow}>
           <PrizeBox
@@ -19,8 +19,8 @@ function Prizes() {
             text={{
               top: "Prediction",
               prize: "$150 billion",
-              prizeDesc: "in BNB + CAKE won so far",
-              boxDesc: "Predict the price trend of BNB or CAKE to win",
+              prizeDesc: "in BNB + PTX won so far",
+              boxDesc: "Predict the price trend of BNB or PTX to win",
               btnText: "Play",
             }}
           />
@@ -30,8 +30,8 @@ function Prizes() {
             text={{
               top: "Lottery",
               prize: "$61,861",
-              prizeDesc: "in CAKE prizes this round",
-              boxDesc: "Buy tickets with CAKE, win CAKE if your numbers match",
+              prizeDesc: "in PTX prizes this round",
+              boxDesc: "Buy tickets with PTX, win PTX if your numbers match",
               btnText: "Buy Tickets",
             }}
           />
