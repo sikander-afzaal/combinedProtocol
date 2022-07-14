@@ -54,10 +54,10 @@
 .cardHeader h1 {
   font-size: 20px;
   font-weight: 600;
-  color: var(--dark-purple);
+  color: var(--red-color);
 }
 .cardHeader p {
-  color: var(--purple-color);
+  color: var(--red-color);
   font-size: 14px;
 }
 .cardContent {
