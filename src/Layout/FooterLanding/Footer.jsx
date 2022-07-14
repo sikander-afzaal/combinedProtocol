@@ -4,11 +4,6 @@ import {
   faTwitter,
   faTelegram,
   faDiscord,
-  faInstagram,
-  faMedium,
-  faLinkedin,
-  faGithub,
-  faReddit,
 } from "@fortawesome/free-brands-svg-icons";
 
 import styles from "./Footer.module.css";
@@ -62,29 +57,14 @@ function Footer() {
             Woxcreativedesign
           </p>
           <div className={styles.socialDiv}>
-            <a href="#">
+            <a href="https://t.me/ProtocolX_PTX" target={"blank"}>
               <FontAwesomeIcon icon={faTelegram} />
             </a>
-            <a href="#">
+            <a href="https://twitter.com/protocolx_" target={"blank"}>
               <FontAwesomeIcon icon={faTwitter} />
             </a>
-            <a href="#">
+            <a href="https://discord.gg/protocolx" target={"blank"}>
               <FontAwesomeIcon icon={faDiscord} />
-            </a>
-            <a href="#">
-              <FontAwesomeIcon icon={faInstagram} />
-            </a>
-            <a href="#">
-              <FontAwesomeIcon icon={faMedium} />
-            </a>
-            <a href="#">
-              <FontAwesomeIcon icon={faLinkedin} />
-            </a>
-            <a href="#">
-              <FontAwesomeIcon icon={faGithub} />
-            </a>
-            <a href="#">
-              <FontAwesomeIcon icon={faReddit} />
             </a>
           </div>
         </div>
