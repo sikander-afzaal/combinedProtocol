@@ -11,7 +11,7 @@
   align-items: center;
   position: relative;
   width: 100%;
-  background: linear-gradient(rgb(118, 69, 217) 0%, rgb(69, 42, 122) 100%);
+  background: var(--black-color);
   isolation: isolate;
   padding-top: 70px;
   height: 500px;
@@ -45,9 +45,7 @@
   color: white;
 }
 .lottery h1 {
-  background: linear-gradient(to top, rgb(255, 216, 0), rgb(235, 140, 0));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--red-color);
   font-weight: 600;
   line-height: 1;
   font-size: 64px;
@@ -67,7 +65,7 @@
   left: 50%;
   transform: translate(-50%, -50%) rotate(-6deg);
   width: 240px;
-  background: linear-gradient(rgb(118, 69, 217) 0%, rgb(69, 42, 122) 100%);
+  background: var(--black-color);
   height: 48px;
   color: white;
   border-radius: 10px;
@@ -161,7 +159,7 @@
 .sec2Cont {
   display: flex;
   justify-content: center;
-  background: linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%);
+  background: var(--black-color);
   padding: 48px 20px;
   width: 100%;
 }
@@ -205,9 +203,7 @@
 }
 .time p,
 .time h1 {
-  background: linear-gradient(rgb(255, 216, 0) 0%, rgb(253, 171, 50) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--red-color);
   font-weight: 600;
   line-height: 1;
 }
@@ -361,11 +357,7 @@
 }
 /* section 3 starts here ------------------------- */
 .sec3Cont {
-  background: linear-gradient(
-    139.73deg,
-    rgb(49, 61, 92) 0%,
-    rgb(61, 42, 84) 100%
-  );
+  background: var(--black-color);
   padding: 68px 0px;
   height: 300px;
   display: flex;
@@ -406,7 +398,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  background: linear-gradient(rgb(203, 215, 239) 0%, rgb(154, 159, 208) 100%);
+  background: var(--black-color);
   height: auto;
   padding: 4rem 0rem;
 }
@@ -421,7 +413,7 @@
 }
 .sec4Head {
   font-size: 40px;
-  color: var(--black-color);
+  color: white;
   line-height: 1;
   font-weight: 600;
 }
@@ -429,7 +421,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(238, 234, 244);
+  background-color: white;
   border: 1px solid rgb(215, 202, 236);
   border-radius: 16px;
   overflow: hidden;
@@ -439,7 +431,7 @@
 .finishSwitch h2 {
   font-size: 16px;
   font-weight: 500;
-  color: rgb(122, 110, 170);
+  color: var(--black-color);
   padding: 5px 12px;
   text-align: center;
   user-select: none;
@@ -448,7 +440,7 @@
   transform: scale(0.9);
 }
 .finishSwitch .activeLive {
-  background-color: rgb(122, 110, 170);
+  background-color: var(--red-color);
   color: rgb(255, 255, 255);
   border-radius: 16px;
 }
@@ -574,7 +566,7 @@
   top: 0;
   right: 0;
   z-index: 9;
-  background-color: rgb(118, 69, 217);
+  background-color: var(--black-color);
   color: white;
   padding: 8px 0px;
   text-align: center;
@@ -590,7 +582,7 @@
 }
 .latest::before,
 .latest::after {
-  background-color: rgb(118, 69, 217);
+  background-color: var(--black-color);
   content: "";
   height: 100%;
   margin: 0px -1px;
@@ -693,7 +685,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: rgb(250, 249, 250);
+  background-color: var(--black-color);
   padding: 48px 24px;
 }
 .sec5 {
@@ -706,7 +698,7 @@
   gap: 20px;
 }
 .sec5Head {
-  color: var(--black-color);
+  color: white;
   font-size: 40px;
   line-height: 1;
   font-weight: 600;
@@ -788,14 +780,14 @@
   font-weight: 600;
 }
 .leftCriteria h4 {
-  color: var(--black-color);
+  color: white;
   font-size: 20px;
   line-height: 1;
   font-weight: 600;
 }
 .leftCriteria p,
 .leftCriteria li {
-  color: var(--black-color);
+  color: white;
   font-size: 16px;
   line-height: 1;
   font-weight: 400;

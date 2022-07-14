@@ -23,7 +23,7 @@ function Header() {
     <>
       <div className={styles.header}>
         <div className={styles.leftHeader}>
-          <Link className={styles.logo} to={"/PancakeSwap"}>
+          <Link className={styles.logo} to={"/"}>
             <img src={logoDesk} alt="" />
           </Link>
           <Link className={styles.logoMob} to={"/PancakeSwap"}>
