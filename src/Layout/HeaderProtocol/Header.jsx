@@ -26,7 +26,7 @@ function Header() {
           <Link className={styles.logo} to={"/"}>
             <img src={logoDesk} alt="" />
           </Link>
-          <Link className={styles.logoMob} to={"/PancakeSwap"}>
+          <Link className={styles.logoMob} to={"/"}>
             <img src={logoMob} alt="" />
           </Link>
           <div className={`${styles.navLink}  ${styles.navLink1}`}>
