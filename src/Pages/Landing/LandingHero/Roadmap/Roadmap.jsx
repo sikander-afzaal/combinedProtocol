@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Roadmap.module.css";
-import mid from "../../../Assets/roadmap/mid.png";
-import time from "../../../Assets/roadmap/time.svg";
+import mid from "../../../../Assets/roadmap/mid.png";
+import time from "../../../../Assets/roadmap/time.svg";
 function Roadmap() {
   return (
     <div className={styles.roadCont}>

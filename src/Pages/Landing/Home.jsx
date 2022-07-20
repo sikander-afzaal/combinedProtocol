@@ -1,19 +1,12 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Route, Routes } from "react-router-dom";
 
-import Works from "./Works/Works";
-import Hero from "./Hero/Hero";
-import styles from "./Home.module.css";
-import Model from "./Model/Model";
-import BoxRow1 from "./BoxRow1/BoxRow1";
-import BoxRow2 from "./BoxRow2/BoxRow2";
-import Treasury from "./Treasury/Treasury";
-import Tokenomics from "./Tokenomics/Tokenomics";
-import Faq from "./Faq/Faq";
-import Roadmap from "./Roadmap/Roadmap";
 import Header from "../../Layout/HeaderLanding/Header";
 import Footer from "../../Layout/FooterLanding/Footer";
+import LandingHero from "./LandingHero/LandingHero";
+import PreSale from "./PreSale/PreSale";
 function Home() {
   useEffect(() => {
     AOS.init({
@@ -25,19 +18,10 @@ function Home() {
   return (
     <div className="home">
       <Header />
-      <div className={styles.heroBg}>
-        <Hero />
-        <Works />
-      </div>
-      <Model />
-      <BoxRow1 />
-      <div className={styles.blackBg}>
-        <BoxRow2 />
-        <Treasury />
-        <Tokenomics />
-        <Faq />
-      </div>
-      <Roadmap />
+      <Routes>
+        <Route path="/" element={<LandingHero />} />
+        <Route path="/Presale" element={<PreSale />} />
+      </Routes>
       <Footer />
     </div>
   );

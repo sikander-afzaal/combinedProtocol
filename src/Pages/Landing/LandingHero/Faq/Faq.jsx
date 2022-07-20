@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from "./Faq.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
-import cube from "../../../Assets/cubes.svg";
+import cube from "../../../../Assets/cubes.svg";
 function Faq() {
   // if you want to add more questions just add another false here or vice versa
   const [open, setOpen] = useState(Array(8).fill(false));

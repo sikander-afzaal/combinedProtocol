@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-image: url("../../../Assets/bg2.png");
+  background-image: url("../../../../Assets/bg2.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: max(90vh, 800px);

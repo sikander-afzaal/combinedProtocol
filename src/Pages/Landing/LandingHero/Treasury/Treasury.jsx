@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Treasury.module.css";
-import img from "../../../Assets/treasure.svg";
-import TextRow from "../../../Components/TextRow/TextRow";
+import img from "../../../../Assets/treasure.svg";
+import TextRow from "../../../../Components/TextRow/TextRow";
 function Treasury() {
   return (
     <div className={styles.treasury}>

@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./Tokenomics.module.css";
-import coin from "../../../Assets/coin.svg";
-import top from "../../../Assets/top-shadow.svg";
-import bot from "../../../Assets/bottom-shadow.svg";
+import coin from "../../../../Assets/coin.svg";
+import top from "../../../../Assets/top-shadow.svg";
+import bot from "../../../../Assets/bottom-shadow.svg";
 function Tokenomics() {
   return (
     <div className={styles.tokenCont}>

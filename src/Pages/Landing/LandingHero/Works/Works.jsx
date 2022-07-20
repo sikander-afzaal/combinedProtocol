@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Works.module.css";
-import img from "../../../Assets/works/work-icon.png";
-import cog from "../../../Assets/works/cog.png";
+import img from "../../../../Assets/works/work-icon.png";
+import cog from "../../../../Assets/works/cog.png";
 function Works() {
   return (
     <div className={`cont ${styles.workCont}`}>

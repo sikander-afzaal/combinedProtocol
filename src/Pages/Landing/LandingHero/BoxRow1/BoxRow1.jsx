@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./BoxRow1.module.css";
-import bulb from "../../../Assets/bulb.png";
-import circle1 from "../../../Assets/circle1.svg";
-import circle2 from "../../../Assets/circle2.svg";
-import Box from "../../../Components/Box/Box";
+import bulb from "../../../../Assets/bulb.png";
+import circle1 from "../../../../Assets/circle1.svg";
+import circle2 from "../../../../Assets/circle2.svg";
+import Box from "../../../../Components/Box/Box";
 function BoxRow1() {
   return (
     <div className={styles.boxCont}>

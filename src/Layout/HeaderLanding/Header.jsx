@@ -33,7 +33,9 @@ function Header() {
           onClick={() => setOpen(false)}
           className={`${styles.overlay}  ${open ? styles.openOverlay : ""}`}
         ></div>
-        <img src={logo} className={styles.logo} alt="" />
+        <Link to={"/"}>
+          <img src={logo} className={styles.logo} alt="" />
+        </Link>
         <div
           className={`${styles.rightHeader}  ${open ? styles.openHeader : ""}`}
         >
@@ -42,13 +44,13 @@ function Header() {
             icon={faXmark}
             className={styles.mobile}
           />
-          <a
+          <Link
             onClick={() => setOpen(false)}
-            href="#"
+            to={"/Presale"}
             className={styles.navLinks}
           >
             Pre-sale
-          </a>
+          </Link>
           <a
             onClick={() => setOpen(false)}
             href="#"

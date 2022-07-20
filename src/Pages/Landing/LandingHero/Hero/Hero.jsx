@@ -1,9 +1,9 @@
 import React from "react";
 
 import styles from "./Hero.module.css";
-import circle from "../../../Assets/hero/circle.png";
-import shield from "../../../Assets/hero/shield.png";
-import icon from "../../../Assets/hero/icon.png";
+import circle from "../../../../Assets/hero/circle.png";
+import shield from "../../../../Assets/hero/shield.png";
+import icon from "../../../../Assets/hero/icon.png";
 function Hero() {
   return (
     <div className="cont">
