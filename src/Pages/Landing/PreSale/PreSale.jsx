@@ -46,7 +46,7 @@ function PreSale() {
     <div className={styles.preSale}>
       <div className={styles.preSaleBox}>
         <div className={styles.topBox}>
-          <h1>join the refi revolution</h1>
+          {/* <h1>join the refi revolution</h1> */}
           <div className={styles.timerDiv}>
             <div className={styles.timeBox}>
               <h2>{timerHours}</h2>
@@ -61,19 +61,14 @@ function PreSale() {
               <p>Seconds</p>
             </div>
           </div>
-          <h3>30th june, 2022, 17:00 UTC</h3>
         </div>
         <div className={styles.sliderDiv}>
           <div className={styles.line}></div>
-          <div className={styles.row}>
-            <p>2388750 busd</p>
-            <p>2388750 busd</p>
-          </div>
         </div>
         <div className={styles.inputDiv}>
           <div className={styles.row}>
             <h4>amount (busd)</h4>
-            <h4>amount ($kyoto)</h4>
+            <h4>amount </h4>
           </div>
           <div className={styles.row}>
             <div className={styles.inputCol}>
