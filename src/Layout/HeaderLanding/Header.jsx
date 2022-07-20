@@ -53,8 +53,9 @@ function Header() {
           </Link>
           <a
             onClick={() => setOpen(false)}
-            href="#"
+            href="https://docs.google.com/document/d/15oYAdnrAhlErf-12iDwnhT05-RFljs54C-gBqprkcKo/edit"
             className={styles.navLinks}
+            target={"blank"}
           >
             Whitepaper
           </a>
