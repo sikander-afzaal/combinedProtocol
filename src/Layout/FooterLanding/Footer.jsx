@@ -26,7 +26,12 @@ function Footer() {
             <div className={styles.colFooter}>
               <h1>Map</h1>
               <a href="#">Presale </a>
-              <a href="#">Whitepaper</a>
+              <a
+                href="https://docs.google.com/document/d/15oYAdnrAhlErf-12iDwnhT05-RFljs54C-gBqprkcKo/edit"
+                target={"blank"}
+              >
+                Whitepaper
+              </a>
               <a href="#">About us</a>
               <a href="#">Buy PTX</a>
               <a href="#">Contact Us</a>
