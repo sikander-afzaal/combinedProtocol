@@ -213,7 +213,7 @@
     flex: 1;
   }
   .inputCol {
-    width: 100%;
+    width: auto;
   }
   .inputDiv h5 {
     width: 100%;
@@ -227,7 +227,7 @@
     text-align: right;
   }
 }
-@media screen and (max-width: 418px) {
+@media screen and (max-width: 422px) {
   .inputDiv > .row {
     gap: 10px;
   }
