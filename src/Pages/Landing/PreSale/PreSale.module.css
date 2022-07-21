@@ -207,18 +207,20 @@
     gap: 30px;
   }
   .inputRow {
-    width: min-content;
+    width: fit-content;
   }
   .inputRow input {
     flex: 1;
-  }
-  .inputCol {
     width: auto;
   }
+  .inputCol {
+    width: fit-content;
+  }
   .inputDiv h5 {
-    width: 100%;
-    display: inline;
+    width: auto;
+    display: inline-block;
     text-align: right;
+    min-width: 53px;
   }
   .statusDiv .row {
     gap: 20px;
@@ -231,11 +233,15 @@
   .inputDiv > .row {
     gap: 10px;
   }
+  .inputRow {
+    width: 100%;
+  }
   .inputDiv .row h4 {
     font-size: 16px;
   }
   .inputDiv h5 {
     font-size: 17px;
+    min-width: 55px;
   }
   .statusDiv .row h3,
   .statusDiv .row p {
@@ -250,7 +256,7 @@
   }
   .inputRow input {
     flex: none;
-    width: 150px;
+    width: 80%;
   }
   .inputDiv .row h4:last-child {
     text-align: right;
