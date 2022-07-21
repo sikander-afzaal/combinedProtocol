@@ -1,0 +1,80 @@
+.aboutCont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  background-color: var(--black-color);
+}
+.about {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0px 20px;
+  gap: 50px;
+}
+.about h1 {
+  color: var(--red-color);
+  font-size: 40px;
+  line-height: 1;
+}
+.teamGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  row-gap: 60px;
+  column-gap: 20px;
+}
+.teamBox {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 30px 400px auto 350px;
+  align-items: flex-start;
+  justify-items: center;
+  gap: 20px;
+  width: 500px;
+  color: white;
+  border: 2px solid var(--red-color);
+  border-bottom: none;
+  box-shadow: 0px 8px 0px 0px var(--red-color);
+  padding: 20px 0px;
+}
+.teamBox h2 {
+  font-size: 18px;
+  line-height: 1;
+  padding: 0px 10px;
+  text-align: center;
+}
+.teamBox h3 {
+  font-size: 16px;
+  line-height: 1;
+  padding: 0px 10px;
+  text-decoration: underline;
+}
+.teamBox p {
+  line-height: 1.2;
+  font-size: 16px;
+  padding: 0px 10px;
+  text-align: center;
+}
+.teamBox img {
+  max-width: 100%;
+  object-fit: cover;
+  max-height: 400px;
+  height: 100%;
+}
+@media screen and (max-width: 1064px) {
+  .teamGrid {
+    justify-content: center;
+  }
+  .teamBox {
+    grid-template-rows: auto 400px auto auto;
+  }
+}
