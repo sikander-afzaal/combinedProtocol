@@ -1,0 +1,164 @@
+.whitepaperCont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  background-color: var(--black-color);
+}
+.whitepaper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0px 20px;
+}
+.textCont {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  margin: 20px 0px;
+}
+.textCont h1 {
+  color: var(--red-color);
+  font-size: 30px;
+  line-height: 1;
+}
+.textCont p,
+.textCont h4,
+ul li {
+  color: white;
+  font-size: 16px;
+  line-height: 1.2;
+}
+.textCont h4 {
+  font-style: italic;
+}
+.textCont img {
+  max-width: 100%;
+  object-fit: contain;
+}
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 30px;
+  gap: 10px;
+}
+.list ul,
+.roadList ul {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.list h5 {
+  color: white;
+  font-size: 16px;
+  text-decoration: underline;
+}
+.roadItem {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  margin: 20px 0px;
+}
+.roadList {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 50px;
+  gap: 10px;
+}
+.roadList ul {
+  padding-left: 20px;
+  list-style-position: inside;
+}
+.faqDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0.6;
+  gap: 20px;
+  flex-direction: column;
+}
+.faqQDiv {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+.faqBtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 1rem;
+  background-color: transparent;
+  border-bottom: 2px solid #202932;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.faqBtn p {
+  pointer-events: none;
+  text-align: left;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #d9f7f5;
+}
+.faqBtn svg {
+  font-size: 1.5rem;
+  color: #da2a2a;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}
+.faqAnswer {
+  transition: all 0.3s ease-in-out;
+  padding-inline: 2rem;
+  max-height: 0px;
+  overflow-y: hidden;
+  width: 100%;
+}
+.answer {
+  font-family: "Nunito";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #d9f7f5;
+  text-align: left;
+}
+.active {
+  padding: 1.5rem 2rem;
+  max-height: 900px;
+  overflow-y: visible;
+}
+.faqBtn svg.activeBtn {
+  transform: rotate(180deg);
+}
+@media screen and (max-width: 700px) {
+  .roadList {
+    padding: 0px;
+  }
+  .roadList ul {
+    list-style-position: outside;
+  }
+  .faqBtn p {
+    font-size: 16px;
+  }
+}
