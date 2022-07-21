@@ -9,6 +9,7 @@ import {
 import styles from "./Footer.module.css";
 import logo from "../../Assets/logo.svg";
 import { Link } from "react-router-dom";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 function Footer() {
   return (
     <div className={styles.footer}>
@@ -70,6 +71,9 @@ function Footer() {
             </a>
             <a href="https://discord.gg/protocolx" target={"blank"}>
               <FontAwesomeIcon icon={faDiscord} />
+            </a>
+            <a href="mailto:Neal@protocol-x.io" target={"blank"}>
+              <FontAwesomeIcon icon={faEnvelope} />
             </a>
           </div>
         </div>
