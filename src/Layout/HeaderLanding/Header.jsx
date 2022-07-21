@@ -51,21 +51,20 @@ function Header() {
           >
             Pre-sale
           </Link>
-          <a
+          <Link
             onClick={() => setOpen(false)}
-            href="https://docs.google.com/document/d/15oYAdnrAhlErf-12iDwnhT05-RFljs54C-gBqprkcKo/edit"
+            to={"/Whitepaper"}
             className={styles.navLinks}
-            target={"blank"}
           >
             Whitepaper
-          </a>
-          <a
+          </Link>
+          <Link
             onClick={() => setOpen(false)}
-            href="#"
+            to={"/About"}
             className={styles.navLinks}
           >
             About us
-          </a>
+          </Link>
           <a
             onClick={() => setOpen(false)}
             href="#"
