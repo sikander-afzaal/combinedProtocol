@@ -73,13 +73,13 @@ function Header() {
             Contact us
           </Link>
 
-          <a
+          <Link
             onClick={() => setOpen(false)}
-            href="#"
             className={styles.navLinks}
+            to="/PancakeSwap"
           >
-            buy ptx
-          </a>
+            Buy PTX
+          </Link>
           <Link
             onClick={() => setOpen(false)}
             to={"/PancakeSwap"}

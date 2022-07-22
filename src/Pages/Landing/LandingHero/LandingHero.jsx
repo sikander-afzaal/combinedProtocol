@@ -9,6 +9,7 @@ import Treasury from "./Treasury/Treasury";
 import Tokenomics from "./Tokenomics/Tokenomics";
 import Faq from "./Faq/Faq";
 import Roadmap from "./Roadmap/Roadmap";
+
 function LandingHero() {
   return (
     <div>

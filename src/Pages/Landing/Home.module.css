@@ -9,6 +9,7 @@
   align-items: center;
   flex-direction: column;
 }
+
 .blackBg {
   overflow-x: hidden;
   display: flex;
