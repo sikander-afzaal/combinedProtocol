@@ -65,20 +65,14 @@ function Header() {
           >
             About us
           </Link>
-          <a
+          <Link
             onClick={() => setOpen(false)}
-            href="#"
+            to="/Contact"
             className={styles.navLinks}
           >
             Contact us
-          </a>
-          <a
-            onClick={() => setOpen(false)}
-            href="#"
-            className={styles.navLinks}
-          >
-            chart
-          </a>
+          </Link>
+
           <a
             onClick={() => setOpen(false)}
             href="#"

@@ -27,7 +27,9 @@ function Footer() {
           <div className={styles.rightFooter}>
             <div className={styles.colFooter}>
               <h1>Map</h1>
-              <a href="#">Presale </a>
+              <Link to={"/Presale"} onClick={() => window.scrollTo(0, 0)}>
+                PreSale
+              </Link>
               <Link to={"/Whitepaper"} onClick={() => window.scrollTo(0, 0)}>
                 Whitepaper
               </Link>
@@ -35,8 +37,13 @@ function Footer() {
                 About us
               </Link>
               <a href="#">Buy PTX</a>
-              <a href="#">Contact Us</a>
-              <a href="#">Chart</a>
+              <Link
+                to="/Contact"
+                onClick={() => window.scrollTo(0, 0)}
+                className={styles.navLinks}
+              >
+                Contact us
+              </Link>
             </div>
 
             <div className={styles.colFooter}>
@@ -49,8 +56,12 @@ function Footer() {
             </div>
             <div className={styles.colFooter}>
               <h1>Community</h1>
-              <a href="#">Discord</a>
-              <a href="#">Twitter</a>
+              <a href="https://discord.gg/protocolx" target={"blank"}>
+                Discord
+              </a>
+              <a href="https://twitter.com/protocolx_" target={"blank"}>
+                Twitter
+              </a>
             </div>
           </div>
         </div>

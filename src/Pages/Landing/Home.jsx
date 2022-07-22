@@ -9,6 +9,7 @@ import LandingHero from "./LandingHero/LandingHero";
 import PreSale from "./PreSale/PreSale";
 import Whitepaper from "./Whitepaper/Whitepaper";
 import About from "./About/About";
+import Contact from "./Contact/Contact";
 function Home() {
   useEffect(() => {
     AOS.init({
@@ -25,6 +26,7 @@ function Home() {
         <Route path="/Presale" element={<PreSale />} />
         <Route path="/Whitepaper" element={<Whitepaper />} />
         <Route path="/About" element={<About />} />
+        <Route path="/Contact" element={<Contact />} />
       </Routes>
       <Footer />
     </div>
