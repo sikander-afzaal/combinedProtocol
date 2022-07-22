@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Contact.module.css";
+import Button from "../../../Components/Button/Button";
 function Contact() {
   return (
     <div className={styles.contactCont}>
@@ -12,6 +13,7 @@ function Contact() {
           </div>
           <input type="email" placeholder="Email" />
           <textarea placeholder="Description"></textarea>
+          <Button text={"Submit"} />
         </form>
       </div>
     </div>

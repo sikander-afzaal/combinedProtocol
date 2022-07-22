@@ -67,4 +67,7 @@ form input::placeholder {
     flex-direction: column;
     gap: 20px;
   }
+  form button {
+    width: 95%;
+  }
 }
