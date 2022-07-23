@@ -232,12 +232,12 @@
     text-align: right;
   }
 }
-@media screen and (max-width: 422px) {
+@media screen and (max-width: 430px) {
   .preSaleBox {
     width: 350px;
   }
   .inputDiv > .row {
-    gap: 10px;
+    flex-direction: column;
   }
   .inputRow {
     width: 100%;
