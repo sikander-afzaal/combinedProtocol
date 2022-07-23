@@ -203,6 +203,9 @@
   }
 }
 @media screen and (max-width: 778px) {
+  .preSaleBox {
+    width: 400px;
+  }
   .inputDiv > .row {
     gap: 30px;
   }
@@ -230,6 +233,9 @@
   }
 }
 @media screen and (max-width: 422px) {
+  .preSaleBox {
+    width: 350px;
+  }
   .inputDiv > .row {
     gap: 10px;
   }
