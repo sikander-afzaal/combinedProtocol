@@ -1,22 +1,102 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Particles from "react-tsparticles";
+import { loadFull } from "tsparticles";
 
 import styles from "./Hero.module.css";
 import circle from "../../../../Assets/hero/circle.png";
 import shield from "../../../../Assets/hero/shield.png";
 import icon from "../../../../Assets/hero/icon.png";
-import video from "../../../../Assets/hero-bg.mp4";
 function Hero() {
+  const particlesInit = async (main) => {
+    await loadFull(main);
+  };
+
+  const particlesLoaded = (container) => {
+    return;
+  };
   return (
     <div className="cont">
-      <video
-        src={video}
-        playsInline
-        autoPlay
-        muted
-        loop
-        className={styles.bgVideo}
-      />
+      <div className={styles.heroParticles}>
+        <Particles
+          id="tsparticles"
+          init={particlesInit}
+          loaded={particlesLoaded}
+          options={{
+            background: {
+              color: {
+                value: "transparent",
+              },
+            },
+            fullScreen: false,
+            fpsLimit: 120,
+            interactivity: {
+              events: {
+                onClick: {
+                  enable: true,
+                  mode: "push",
+                },
+                onHover: {
+                  enable: true,
+                  mode: "repulse",
+                },
+                resize: true,
+              },
+              modes: {
+                push: {
+                  quantity: 4,
+                },
+                repulse: {
+                  distance: 100,
+                  duration: 0.8,
+                },
+              },
+            },
+            particles: {
+              color: {
+                value: "rgb(192,0,0)",
+              },
+              links: {
+                color: "rgb(192,0,0)",
+                distance: 150,
+                enable: true,
+                opacity: 0.7,
+                width: 1,
+              },
+              collisions: {
+                enable: true,
+              },
+              move: {
+                direction: "none",
+                enable: true,
+                outModes: {
+                  default: "bounce",
+                },
+                random: false,
+                speed: 3,
+                straight: false,
+              },
+              number: {
+                density: {
+                  enable: true,
+                  area: 800,
+                },
+                value: 100,
+              },
+              opacity: {
+                value: 0.8,
+              },
+              shape: {
+                type: "circle",
+              },
+              size: {
+                value: { min: 1, max: 5 },
+              },
+            },
+            detectRetina: true,
+          }}
+        />
+      </div>
       <div className={styles.hero}>
         <div
           data-aos="fade-right"
