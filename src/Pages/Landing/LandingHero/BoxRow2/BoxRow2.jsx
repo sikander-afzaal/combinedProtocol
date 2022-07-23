@@ -17,6 +17,7 @@ function BoxRow2() {
           desc={
             "We will implement farming and liquidity pools for single-stake XSWAP to earn wPTX, and vice versa. Farm token (XSWAP) with a variable APR to coincide with a fixed emissions rate (5B tokens emitted per year over 10 years, max supply of 50B XSWAP)"
           }
+          anim="pulse"
         />
         <Box
           aos={"fade-left"}
@@ -26,6 +27,7 @@ function BoxRow2() {
           desc={
             "Implement the DEX and platform. This will allow us to utilize fees to conduct buybacks, burns, and other revenue streamlining methods for the advancement of the protocol. We can also directly partner with other protocols, hosting pre-sales and providing a platform for new or established protocols."
           }
+          anim={"gelatine"}
         />
       </div>
     </div>

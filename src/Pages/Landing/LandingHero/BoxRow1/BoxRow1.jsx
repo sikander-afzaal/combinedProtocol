@@ -17,6 +17,7 @@ function BoxRow1() {
           desc={
             "The entirety of all PxBB (ProtocolX Buy Back) funds go to buybacks of X-Share NFTs and the PTX token, providing them both with a direct deflationary pressure."
           }
+          anim={"bounce"}
         />
         <Box
           aos={"fade-left"}
@@ -26,6 +27,7 @@ function BoxRow1() {
           desc={
             "Owning a ProtocolX NFT chest (XShare) is your direct share to the company's revenue stream as a whole. This includes a revenue share model from the NFT Marketplace, ProtocolX, and any other future developments under the ProtocolX umbrella."
           }
+          anim={"shake"}
         />
       </div>
     </div>
