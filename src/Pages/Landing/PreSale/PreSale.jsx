@@ -92,7 +92,7 @@ function PreSale() {
           </div>
           <div className={styles.row}>
             <h3>fair launch price</h3>
-            <p>15 Busd = 1 $kyoto</p>
+            <p>15 Busd</p>
           </div>
           <div className={styles.row}>
             <h3>total raise (BUSD)</h3>
