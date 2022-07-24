@@ -10,13 +10,13 @@ function Earn() {
       <div className={styles.earnHeader}>
         <NavLink
           className={({ isActive }) => (isActive ? "active" : "")}
-          to={"/PancakeSwap/Earn/Farm"}
+          to={"/Protocol/Earn/Farm"}
         >
           Farms
         </NavLink>
         <NavLink
           className={({ isActive }) => (isActive ? "active" : "")}
-          to={"/PancakeSwap/Earn/Pools"}
+          to={"/Protocol/Earn/Pools"}
         >
           Pools
         </NavLink>

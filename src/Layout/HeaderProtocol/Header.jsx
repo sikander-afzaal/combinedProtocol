@@ -15,7 +15,7 @@ import {
 import styles from "./Header.module.css";
 import logoDesk from "../../Assets/logo-desk.svg";
 import logoMob from "../../Assets/logo-mob.png";
-import small from "../../Assets/small-ico.svg";
+import small from "../../Assets/icon.png";
 function Header() {
   const [menu, setMenu] = useState("");
   const [lang, setLang] = useState(false);
@@ -30,40 +30,40 @@ function Header() {
             <img src={logoMob} alt="" />
           </Link>
           <div className={`${styles.navLink}  ${styles.navLink1}`}>
-            <Link className={styles.mainNav} to={"/PancakeSwap/Trade/"}>
+            <Link className={styles.mainNav} to={"/Protocol/Trade/"}>
               Trade
             </Link>
             <div className={`${styles.dropMenu} ${styles.dropMenu1}`}>
-              <Link to={"/PancakeSwap/Trade/"}>Swap</Link>
-              {/* <Link to={"/PancakeSwap/Trade/Limit"}>Stake</Link> */}
-              <Link to={"/PancakeSwap/Trade/Liquidity"}>Liquidity</Link>
+              <Link to={"/Protocol/Trade/"}>Swap</Link>
+              {/* <Link to={"/Protocol/Trade/Limit"}>Stake</Link> */}
+              <Link to={"/Protocol/Trade/Liquidity"}>Liquidity</Link>
             </div>
           </div>
           <div className={`${styles.navLink}  ${styles.navLink2}`}>
-            <Link className={styles.mainNav} to={"/PancakeSwap/Earn/Farm"}>
+            <Link className={styles.mainNav} to={"/Protocol/Earn/Farm"}>
               Earn
             </Link>
             <div className={`${styles.dropMenu} ${styles.dropMenu2}`}>
-              <Link to={"/PancakeSwap/Earn/Farm"}>Farms</Link>
-              <Link to={"/PancakeSwap/Earn/Pools"}>Pools</Link>
+              <Link to={"/Protocol/Earn/Farm"}>Farms</Link>
+              <Link to={"/Protocol/Earn/Pools"}>Pools</Link>
             </div>
           </div>
           <div className={`${styles.navLink}  ${styles.navLink3}`}>
-            <Link className={styles.mainNav} to={"/PancakeSwap/Win/Lottery"}>
+            <Link className={styles.mainNav} to={"/Protocol/Win/Lottery"}>
               Win
             </Link>
             <div className={`${styles.dropMenu} ${styles.dropMenu3}`}>
-              <Link to={"/PancakeSwap/Win/Lottery"}>Lottery</Link>
+              <Link to={"/Protocol/Win/Lottery"}>Lottery</Link>
             </div>
           </div>
           {/* <div className={`${styles.navLink}  ${styles.navLink4}`}>
-            <Link className={styles.mainNav} to={"/PancakeSwap"}>
+            <Link className={styles.mainNav} to={"/Protocol"}>
               NFT
             </Link>
             <div className={`${styles.dropMenu} ${styles.dropMenu4}`}>
-              <Link to={"/PancakeSwap"}>Overview</Link>
-              <Link to={"/PancakeSwap"}>Collections</Link>
-              <Link to={"/PancakeSwap"}>Activity</Link>
+              <Link to={"/Protocol"}>Overview</Link>
+              <Link to={"/Protocol"}>Collections</Link>
+              <Link to={"/Protocol"}>Activity</Link>
             </div>
           </div> */}
           {/* <div className={`${styles.navLink}  ${styles.navLink5}`}>
@@ -72,19 +72,19 @@ function Header() {
             </div>
 
             <div className={`${styles.dropMenu} ${styles.dropMenu5}`}>
-              <Link to={"/PancakeSwap"}>Info</Link>
-              <Link to={"/PancakeSwap"}>IFO</Link>
-              <Link to={"/PancakeSwap"}>Voting</Link>
-              <Link to={"/PancakeSwap"} className={styles.border}>
+              <Link to={"/Protocol"}>Info</Link>
+              <Link to={"/Protocol"}>IFO</Link>
+              <Link to={"/Protocol"}>Voting</Link>
+              <Link to={"/Protocol"} className={styles.border}>
                 Leaderboard
               </Link>
-              <Link to={"/PancakeSwap"}>
+              <Link to={"/Protocol"}>
                 Blog{" "}
                 <span>
                   <FontAwesomeIcon icon={faArrowRightFromBracket} />
                 </span>
               </Link>
-              <Link to={"/PancakeSwap"}>
+              <Link to={"/Protocol"}>
                 Docs{" "}
                 <span>
                   <FontAwesomeIcon icon={faArrowRightFromBracket} />
@@ -159,9 +159,9 @@ function Header() {
               menu === "TRADE" ? styles.openMenu : ""
             }`}
           >
-            <Link to={"/PancakeSwap/Trade/"}>Swap</Link>
-            {/* <Link to={"/PancakeSwap/Trade/Limit"}>Stake</Link> */}
-            <Link to={"/PancakeSwap/Trade/Liquidity"}>Liquidity</Link>
+            <Link to={"/Protocol/Trade/"}>Swap</Link>
+            {/* <Link to={"/Protocol/Trade/Limit"}>Stake</Link> */}
+            <Link to={"/Protocol/Trade/Liquidity"}>Liquidity</Link>
           </div>
         </div>
         <div
@@ -182,8 +182,8 @@ function Header() {
               menu === "EARN" ? styles.openMenu : ""
             }`}
           >
-            <Link to={"/PancakeSwap/Earn/Farm"}>Farms</Link>
-            <Link to={"/PancakeSwap/Earn/Pools"}>Pools</Link>
+            <Link to={"/Protocol/Earn/Farm"}>Farms</Link>
+            <Link to={"/Protocol/Earn/Pools"}>Pools</Link>
           </div>
         </div>
         <div
@@ -204,7 +204,7 @@ function Header() {
               menu === "WIN" ? styles.openMenu : ""
             }`}
           >
-            <Link to={"/PancakeSwap/Win/Lottery"}>Lottery</Link>
+            <Link to={"/Protocol/Win/Lottery"}>Lottery</Link>
           </div>
         </div>
         {/* <div
@@ -225,9 +225,9 @@ function Header() {
               menu === "NFT" ? styles.openMenu : ""
             }`}
           >
-            <Link to={"/PancakeSwap"}>Overview</Link>
-            <Link to={"/PancakeSwap"}>Collections</Link>
-            <Link to={"/PancakeSwap"}>Activity</Link>
+            <Link to={"/Protocol"}>Overview</Link>
+            <Link to={"/Protocol"}>Collections</Link>
+            <Link to={"/Protocol"}>Activity</Link>
           </div>
         </div> */}
         {/* <div
@@ -247,19 +247,19 @@ function Header() {
               menu === "MENU" ? styles.openMenu : ""
             }`}
           >
-            <Link to={"/PancakeSwap"}>Info</Link>
-            <Link to={"/PancakeSwap"}>IFO</Link>
-            <Link to={"/PancakeSwap"}>Voting</Link>
-            <Link to={"/PancakeSwap"} className={styles.border}>
+            <Link to={"/Protocol"}>Info</Link>
+            <Link to={"/Protocol"}>IFO</Link>
+            <Link to={"/Protocol"}>Voting</Link>
+            <Link to={"/Protocol"} className={styles.border}>
               Leaderboard
             </Link>
-            <Link to={"/PancakeSwap"}>
+            <Link to={"/Protocol"}>
               Blog{" "}
               <span>
                 <FontAwesomeIcon icon={faArrowRightFromBracket} />
               </span>
             </Link>
-            <Link to={"/PancakeSwap"}>
+            <Link to={"/Protocol"}>
               Docs{" "}
               <span>
                 <FontAwesomeIcon icon={faArrowRightFromBracket} />

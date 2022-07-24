@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/*" element={<Home />} />
-        <Route path="/PancakeSwap/*" element={<Protocol />} />
+        <Route path="/Protocol/*" element={<Protocol />} />
       </Routes>
     </div>
   );

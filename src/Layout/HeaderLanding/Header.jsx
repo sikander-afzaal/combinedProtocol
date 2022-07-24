@@ -76,13 +76,13 @@ function Header() {
           <Link
             onClick={() => setOpen(false)}
             className={styles.navLinks}
-            to="/PancakeSwap"
+            to="/Protocol"
           >
             Buy PTX
           </Link>
           <Link
             onClick={() => setOpen(false)}
-            to={"/PancakeSwap"}
+            to={"/Protocol"}
             className={styles.navLinks}
           >
             dex

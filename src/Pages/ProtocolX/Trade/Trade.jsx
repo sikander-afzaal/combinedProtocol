@@ -11,19 +11,19 @@ function Trade() {
       <div className={styles.tradeHeader}>
         <NavLink
           className={({ isActive }) => (isActive ? "active" : "")}
-          to={"/PancakeSwap/Trade/"}
+          to={"/Protocol/Trade/"}
         >
           Swap
         </NavLink>
         {/* <NavLink
           className={({ isActive }) => (isActive ? "active" : "")}
-          to={"/PancakeSwap/Trade/Limit"}
+          to={"/Protocol/Trade/Limit"}
         >
           Stake
         </NavLink> */}
         <NavLink
           className={({ isActive }) => (isActive ? "active" : "")}
-          to={"/PancakeSwap/Trade/Liquidity"}
+          to={"/Protocol/Trade/Liquidity"}
         >
           Liquidity
         </NavLink>

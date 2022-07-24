@@ -25,7 +25,7 @@ function Home() {
       <Prizes />
       <Cake />
       <Connect /> */}
-      <Link to="/PancakeSwap/Trade">
+      <Link to="/Protocol/Trade">
         <Button text={"Trade Now"} inverse />
       </Link>
       <Button text={"Connect Wallet"} />
