@@ -12,7 +12,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import Button from "../../../Components/Button/Button";
-import busd from "../../../Assets/busd.png";
+import ptx from "../../../Assets/icon.png";
 import bnb from "../../../Assets/bnb.svg";
 import switchImg from "../../../Assets/switch-icon.svg";
 import graph from "../../../Assets/graph.PNG";
@@ -25,9 +25,9 @@ const tokens = [
     desc: "BNB",
   },
   {
-    img: busd,
-    name: "BUSD",
-    desc: "BUSD Token",
+    img: ptx,
+    name: "PTX",
+    desc: "PTX Token",
   },
 ];
 
@@ -39,8 +39,8 @@ function Swap() {
       value: "",
     },
     inputTwo: {
-      img: busd,
-      name: "BUSD",
+      img: ptx,
+      name: "PTX",
       value: "",
     },
   });

@@ -14,7 +14,7 @@ import {
   faCaretDown,
 } from "@fortawesome/free-solid-svg-icons";
 import bnb from "../../../Assets/bnb.svg";
-import busd from "../../../Assets/busd.png";
+import ptx from "../../../Assets/icon.png";
 
 const allTokens = [
   {
@@ -23,9 +23,9 @@ const allTokens = [
     desc: "BNB",
   },
   {
-    img: busd,
-    name: "BUSD",
-    desc: "BUSD Token",
+    img: ptx,
+    name: "PTX",
+    desc: "PTX Token",
   },
 ];
 
@@ -40,8 +40,8 @@ export default function Liquidity() {
       tokenName: "BNB",
     },
     tokenTwo: {
-      img: busd,
-      tokenName: "BUSD",
+      img: ptx,
+      tokenName: "PTX",
     },
   });
 

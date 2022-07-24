@@ -76,17 +76,11 @@ function Header() {
           <Link
             onClick={() => setOpen(false)}
             className={styles.navLinks}
-            to="/Protocol"
+            to="/Protocol/Trade"
           >
-            Buy PTX
+            Buy PTX / Dex
           </Link>
-          <Link
-            onClick={() => setOpen(false)}
-            to={"/Protocol"}
-            className={styles.navLinks}
-          >
-            dex
-          </Link>
+
           <button
             onClick={() => {
               setModal(true);
