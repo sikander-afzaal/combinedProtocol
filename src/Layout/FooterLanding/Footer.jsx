@@ -48,10 +48,10 @@ function Footer() {
 
             <div className={styles.colFooter}>
               <h1>Products</h1>
-              <a href="#">$PTX</a>
+              <Link to="/Protocol/Trade">$PTX</Link>
               <a href="#">XShare</a>
               <a href="#">XSwap </a>
-              <Link to="/PancakeSwap">Dex</Link>
+              <Link to="/Protocol/Trade">Dex</Link>
               <a href="#">Farming & Staking</a>
             </div>
             <div className={styles.colFooter}>

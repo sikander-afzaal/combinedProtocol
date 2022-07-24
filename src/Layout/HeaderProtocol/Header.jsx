@@ -2,13 +2,10 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  // faArrowRightFromBracket,
-  // faEllipsis,
   faGear,
   faGlobe,
   faMoneyBillTrendUp,
   faSackDollar,
-  // faShapes,
   faTrophy,
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -35,7 +32,6 @@ function Header() {
             </Link>
             <div className={`${styles.dropMenu} ${styles.dropMenu1}`}>
               <Link to={"/Protocol/Trade/"}>Swap</Link>
-              {/* <Link to={"/Protocol/Trade/Limit"}>Stake</Link> */}
               <Link to={"/Protocol/Trade/Liquidity"}>Liquidity</Link>
             </div>
           </div>
@@ -56,42 +52,6 @@ function Header() {
               <Link to={"/Protocol/Win/Lottery"}>Lottery</Link>
             </div>
           </div>
-          {/* <div className={`${styles.navLink}  ${styles.navLink4}`}>
-            <Link className={styles.mainNav} to={"/Protocol"}>
-              NFT
-            </Link>
-            <div className={`${styles.dropMenu} ${styles.dropMenu4}`}>
-              <Link to={"/Protocol"}>Overview</Link>
-              <Link to={"/Protocol"}>Collections</Link>
-              <Link to={"/Protocol"}>Activity</Link>
-            </div>
-          </div> */}
-          {/* <div className={`${styles.navLink}  ${styles.navLink5}`}>
-            <div className={styles.mainNav}>
-              <FontAwesomeIcon icon={faEllipsis} />
-            </div>
-
-            <div className={`${styles.dropMenu} ${styles.dropMenu5}`}>
-              <Link to={"/Protocol"}>Info</Link>
-              <Link to={"/Protocol"}>IFO</Link>
-              <Link to={"/Protocol"}>Voting</Link>
-              <Link to={"/Protocol"} className={styles.border}>
-                Leaderboard
-              </Link>
-              <Link to={"/Protocol"}>
-                Blog{" "}
-                <span>
-                  <FontAwesomeIcon icon={faArrowRightFromBracket} />
-                </span>
-              </Link>
-              <Link to={"/Protocol"}>
-                Docs{" "}
-                <span>
-                  <FontAwesomeIcon icon={faArrowRightFromBracket} />
-                </span>
-              </Link>
-            </div>
-          </div> */}
         </div>
         <div className={styles.rightHeader}>
           <div className={styles.amount}>
@@ -160,7 +120,6 @@ function Header() {
             }`}
           >
             <Link to={"/Protocol/Trade/"}>Swap</Link>
-            {/* <Link to={"/Protocol/Trade/Limit"}>Stake</Link> */}
             <Link to={"/Protocol/Trade/Liquidity"}>Liquidity</Link>
           </div>
         </div>
@@ -207,66 +166,6 @@ function Header() {
             <Link to={"/Protocol/Win/Lottery"}>Lottery</Link>
           </div>
         </div>
-        {/* <div
-          onClick={() =>
-            setMenu((prev) => {
-              if (prev === "NFT") {
-                return "";
-              }
-              return "NFT";
-            })
-          }
-          className={`${styles.mobLink} ${styles.mobLink4}`}
-        >
-          <FontAwesomeIcon icon={faShapes} />
-          <p>Nft</p>
-          <div
-            className={`${styles.dropMenu}  ${
-              menu === "NFT" ? styles.openMenu : ""
-            }`}
-          >
-            <Link to={"/Protocol"}>Overview</Link>
-            <Link to={"/Protocol"}>Collections</Link>
-            <Link to={"/Protocol"}>Activity</Link>
-          </div>
-        </div> */}
-        {/* <div
-          onClick={() =>
-            setMenu((prev) => {
-              if (prev === "MENU") {
-                return "";
-              }
-              return "MENU";
-            })
-          }
-          className={`${styles.mobLink} ${styles.mobLink5}`}
-        >
-          <FontAwesomeIcon icon={faEllipsis} />
-          <div
-            className={`${styles.dropMenu}  ${
-              menu === "MENU" ? styles.openMenu : ""
-            }`}
-          >
-            <Link to={"/Protocol"}>Info</Link>
-            <Link to={"/Protocol"}>IFO</Link>
-            <Link to={"/Protocol"}>Voting</Link>
-            <Link to={"/Protocol"} className={styles.border}>
-              Leaderboard
-            </Link>
-            <Link to={"/Protocol"}>
-              Blog{" "}
-              <span>
-                <FontAwesomeIcon icon={faArrowRightFromBracket} />
-              </span>
-            </Link>
-            <Link to={"/Protocol"}>
-              Docs{" "}
-              <span>
-                <FontAwesomeIcon icon={faArrowRightFromBracket} />
-              </span>
-            </Link>
-          </div>
-        </div> */}
       </div>
     </>
   );

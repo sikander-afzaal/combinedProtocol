@@ -3,7 +3,6 @@ import { Routes, Route, NavLink } from "react-router-dom";
 
 import Swap from "./Swap";
 import styles from "./styles/Trade.module.css";
-// import Limit from "./Limit";
 import Liquidity from "./Liquidity";
 function Trade() {
   return (
@@ -15,12 +14,7 @@ function Trade() {
         >
           Swap
         </NavLink>
-        {/* <NavLink
-          className={({ isActive }) => (isActive ? "active" : "")}
-          to={"/Protocol/Trade/Limit"}
-        >
-          Stake
-        </NavLink> */}
+
         <NavLink
           className={({ isActive }) => (isActive ? "active" : "")}
           to={"/Protocol/Trade/Liquidity"}
@@ -30,7 +24,6 @@ function Trade() {
       </div>
       <Routes>
         <Route path="/" element={<Swap />} />
-        {/* <Route path="/Limit" element={<Limit />} /> */}
         <Route path="/Liquidity" element={<Liquidity />} />
       </Routes>
     </div>

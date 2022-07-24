@@ -46,7 +46,6 @@ function PreSale() {
     <div className={styles.preSale}>
       <div className={styles.preSaleBox}>
         <div className={styles.topBox}>
-          {/* <h1>join the refi revolution</h1> */}
           <div className={styles.timerDiv}>
             <div className={styles.timeBox}>
               <h2>{timerHours}</h2>
