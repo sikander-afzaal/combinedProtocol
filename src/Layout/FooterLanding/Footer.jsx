@@ -36,7 +36,7 @@ function Footer() {
               <Link to={"/About"} onClick={() => window.scrollTo(0, 0)}>
                 About us
               </Link>
-              <Link to="/PancakeSwap">Buy PTX</Link>
+              <Link to="/Protocol/Trade">Buy PTX / Dex</Link>
               <Link
                 to="/Contact"
                 onClick={() => window.scrollTo(0, 0)}
@@ -51,7 +51,6 @@ function Footer() {
               <Link to="/Protocol/Trade">$PTX</Link>
               <a href="#">XShare</a>
               <a href="#">XSwap </a>
-              <Link to="/Protocol/Trade">Dex</Link>
               <a href="#">Farming & Staking</a>
             </div>
             <div className={styles.colFooter}>

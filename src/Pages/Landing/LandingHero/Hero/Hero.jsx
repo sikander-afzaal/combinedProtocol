@@ -111,7 +111,7 @@ function Hero() {
             ever-developing, expanding, and growing ecosystem that all feeds
             into each other.
           </p>
-          <Link to="/PancakeSwap" className={styles.ctaBtn}>
+          <Link to="/Protocol/Trade" className={styles.ctaBtn}>
             Buy $PTX
           </Link>
         </div>
