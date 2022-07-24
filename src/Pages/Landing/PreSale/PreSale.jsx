@@ -67,7 +67,7 @@ function PreSale() {
         </div>
         <div className={styles.inputDiv}>
           <div className={styles.row}>
-            <h4>amount (busd)</h4>
+            <h4>amount (BNB)</h4>
             <h4>amount </h4>
           </div>
           <div className={styles.row}>
@@ -77,13 +77,13 @@ function PreSale() {
                 <button className={styles.max}>MAX</button>
               </div>
               <div className={styles.row}>
-                <p>min buy: 15 busd</p>
-                <p>Max buy: 15,000 busd</p>
+                <p>min buy: 15 BNB</p>
+                <p>Max buy: 15,000 BNB</p>
               </div>
             </div>
             <h5>= 0.00</h5>
           </div>
-          <Button text={"approve busd"} />
+          <Button text={"approve BNB"} />
         </div>
         <div className={styles.statusDiv}>
           <div className={styles.row}>
@@ -92,10 +92,10 @@ function PreSale() {
           </div>
           <div className={styles.row}>
             <h3>fair launch price</h3>
-            <p>15 Busd</p>
+            <p>15 BNB</p>
           </div>
           <div className={styles.row}>
-            <h3>total raise (BUSD)</h3>
+            <h3>total raise (BNB)</h3>
             <p>$ 2388750</p>
           </div>
         </div>
