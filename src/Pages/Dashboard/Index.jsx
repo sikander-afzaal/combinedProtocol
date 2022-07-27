@@ -94,6 +94,7 @@ function Index() {
         </div>
       </div>
       <div className={styles.rightDash}>
+        <div className={styles.mainOverlay}></div>
         <Routes>
           <Route element={<Dashboard />} path="/Dashboard" />
           <Route element={<Account />} path="/Account" />

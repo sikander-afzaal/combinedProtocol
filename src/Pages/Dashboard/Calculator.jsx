@@ -15,7 +15,12 @@ function Calculator() {
         </div>
         <div className={styles.inputWrapper}>
           <label htmlFor="apy">APY (%)</label>
-          <input type="text" id="apy" placeholder="0.00" />
+          <input
+            className={styles.sepInput}
+            type="text"
+            id="apy"
+            placeholder="0.00"
+          />
         </div>
       </div>
       <div className={styles.inputWrapper}>
@@ -38,6 +43,7 @@ function Calculator() {
           max="365"
           step={1}
           value={scale}
+          className={styles.scaleInput}
           onChange={(e) => setScale(e.target.value)}
         />
         <div className={styles.row}>

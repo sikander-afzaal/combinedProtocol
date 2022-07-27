@@ -1,0 +1,160 @@
+.calc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 800px;
+  width: 100%;
+  background-color: var(--black-color);
+  padding: 25px 60px;
+  border-radius: 20px;
+  color: white;
+  gap: 40px;
+}
+.calc h1 {
+  font-size: 40px;
+}
+.inputRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+.inputWrapper {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 2px;
+}
+.inputWrapper label {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+}
+.inputDiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+.inputDiv input {
+  flex: 1;
+  font-size: 14px;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  height: 100%;
+  padding-left: 10px;
+}
+.sepInput {
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding-left: 10px;
+}
+.inputDiv input:focus,
+.sepInput:focus {
+  outline: none;
+}
+.inputDiv button {
+  min-width: 60px;
+  height: 100%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: 2px solid var(--red-color);
+  background-color: black;
+  color: white;
+}
+.calc > .inputWrapper {
+  align-self: flex-start;
+}
+.scaleDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.scaleInput {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%;
+  height: 5px;
+  background-color: white;
+}
+.scaleInput::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: var(--red-color);
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
+.scaleInput::-moz-range-thumb {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: var(--red-color);
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+.lastPart {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  flex-direction: column;
+}
+.lastPart h6 {
+  font-size: 30px;
+}
+.lastPart h4 {
+  font-size: 20px;
+  color: #4ed047;
+}
+.row span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #efefef;
+  background-color: var(--red-color);
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1;
+}
+@media screen and (max-width: 686px) {
+  .inputRow {
+    flex-direction: column;
+  }
+  .inputWrapper {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 470px) {
+  .calc {
+    padding: 20px;
+  }
+}
