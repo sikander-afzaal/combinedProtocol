@@ -1,4 +1,4 @@
-.dashboard {
+.account {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,15 +6,15 @@
   width: 100%;
   max-width: 1200px;
 }
-.dashboard h1 {
+.account h1 {
   color: white;
   font-size: 40px;
   margin-bottom: 50px;
 }
 .cardDiv {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 1fr;
   width: 100%;
   gap: 20px;
 }
@@ -33,12 +33,17 @@
   box-shadow: -1px 0 3px 0 var(--black-color), 1px 1px 3px 0 var(--black-color);
   padding: 20px;
 }
+.dashCard p {
+  color: #4ed047;
+  font-size: 30px;
+  font-weight: 700;
+}
 .dashCard:hover {
   box-shadow: 1px 1px 20px 0 var(--black-color),
     1px 1px 12px 0 var(--black-color);
 }
 .cardDiv .dashCard:last-child {
-  grid-column: 1/3;
+  grid-column: 1/2;
   grid-row: 3/4;
 }
 .dashCard h3 {
@@ -55,45 +60,19 @@
   font-size: 14px;
   font-weight: 700;
 }
-.percentageDiv {
-  width: 100%;
-  height: 5px;
-  border-radius: 100vh;
-  background-color: white;
-  position: relative;
-}
-.percentageBar {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 10%;
-  background-color: var(--red-color);
-}
-@media screen and (max-width: 1320px) {
-  .cardDiv {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: none;
-    grid-auto-rows: 1fr;
-  }
-}
-@media screen and (max-width: 706px) {
-  .cardDiv {
-    grid-template-columns: 1fr 1fr;
-  }
-  .cardDiv .dashCard:last-child {
-    grid-column: initial;
-    grid-row: initial;
-  }
-}
-@media screen and (max-width: 560px) {
+
+@media screen and (max-width: 550px) {
   .cardDiv {
     grid-template-columns: 1fr;
   }
-  .dashboard {
-    padding-top: 40px;
+  .cardDiv .dashCard:last-child {
+    grid-column: auto;
+    grid-row: auto;
   }
-  .dashboard h1 {
+  .account h1 {
     margin-bottom: 20px;
+  }
+  .account {
+    padding-top: 40px;
   }
 }

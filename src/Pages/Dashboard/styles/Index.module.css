@@ -61,6 +61,10 @@
 .rightDash {
   flex: 0.8;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 .mobile {
   display: none;
@@ -76,7 +80,7 @@
     flex: 0.3;
   }
 }
-@media screen and (max-width: 812px) {
+@media screen and (max-width: 964px) {
   .rightDash,
   .sideBar {
     flex: none;

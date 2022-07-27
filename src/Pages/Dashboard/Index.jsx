@@ -19,6 +19,8 @@ import {
   faTwitter,
   faDiscord,
 } from "@fortawesome/free-brands-svg-icons";
+import Account from "./Account";
+import Calculator from "./Calculator";
 function Index() {
   const [openSidebar, setOpenSidebar] = useState(false);
   return (
@@ -94,6 +96,8 @@ function Index() {
       <div className={styles.rightDash}>
         <Routes>
           <Route element={<Dashboard />} path="/Dashboard" />
+          <Route element={<Account />} path="/Account" />
+          <Route element={<Calculator />} path="/Calculator" />
         </Routes>
       </div>
     </div>
