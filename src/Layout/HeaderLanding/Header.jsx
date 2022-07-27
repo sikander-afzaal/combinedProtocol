@@ -80,6 +80,13 @@ function Header() {
           >
             Buy PTX / Dex
           </Link>
+          <Link
+            onClick={() => setOpen(false)}
+            className={styles.navLinks}
+            to="/DashLanding/Dashboard"
+          >
+            Dashboard
+          </Link>
 
           <button
             onClick={() => {

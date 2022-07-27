@@ -1,0 +1,125 @@
+.dashboardIndex {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--red-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sideBar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: var(--black-color);
+  border-right: 1px solid var(--black-color);
+  height: 100vh;
+  flex: 0.2;
+  padding: 4rem 20px;
+  gap: 4rem;
+}
+.sideBar img {
+  align-self: center;
+  max-width: 100%;
+  object-fit: contain;
+}
+.sidebarLinks {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+}
+.sidebarLinks a {
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  width: 100%;
+  border-radius: 14px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.socialLinks {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  padding-left: 20px;
+}
+.socialLinks a {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+.rightDash {
+  flex: 0.8;
+  width: 100%;
+}
+.mobile {
+  display: none;
+}
+.overlaySide {
+  display: none;
+}
+@media screen and (max-width: 1342px) {
+  .rightDash {
+    flex: 0.7;
+  }
+  .sideBar {
+    flex: 0.3;
+  }
+}
+@media screen and (max-width: 812px) {
+  .rightDash,
+  .sideBar {
+    flex: none;
+  }
+  .sideBar {
+    width: 400px;
+    position: fixed;
+    left: -600px;
+    top: 0;
+    transition: all 0.4s ease-in-out;
+  }
+  .activeSidebar {
+    left: 0;
+  }
+  .overlaySide {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .activeOverlay {
+    display: block;
+  }
+  .mobile {
+    display: block;
+    color: white;
+    position: absolute;
+    font-size: 28px;
+    cursor: pointer;
+    top: 20px;
+  }
+  .dashboardIndex .mobile {
+    left: 20px;
+  }
+  .sideBar .mobile {
+    left: auto !important;
+    right: 20px !important;
+  }
+}
+@media screen and (max-width: 422px) {
+  .sideBar {
+    width: 100%;
+  }
+}
