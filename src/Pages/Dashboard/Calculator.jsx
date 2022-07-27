@@ -7,7 +7,7 @@ function Calculator() {
       <h1>Calculator</h1>
       <div className={styles.inputRow}>
         <div className={styles.inputWrapper}>
-          <label htmlFor="amount">$kyoto amount</label>
+          <label htmlFor="amount">$PTX amount</label>
           <div className={styles.inputDiv}>
             <input placeholder="0.00" type="text" id="amount" />
             <button>Max</button>
@@ -24,7 +24,7 @@ function Calculator() {
         </div>
       </div>
       <div className={styles.inputWrapper}>
-        <label htmlFor="amount">future $kyoto market price ($)t</label>
+        <label htmlFor="amount">future $PTX market price ($)t</label>
         <div className={styles.inputDiv}>
           <input type="text" id="amount" placeholder="0.00" />
           <button>Max</button>

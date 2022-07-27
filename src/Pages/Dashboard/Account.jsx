@@ -8,27 +8,27 @@ function Account() {
         <div className={styles.dashCard}>
           <h4>Your Total Balance</h4>
           <p className={styles.dollar}>$</p>
-          <h3>= 0 $kyoto</h3>
+          <h3>= 0 $PTX</h3>
         </div>
         <div className={styles.dashCard}>
           <h4>earnings per day</h4>
           <p className={styles.dollar}>$</p>
-          <h3>= 0 $kyoto</h3>
+          <h3>= 0 $PTX</h3>
         </div>
         <div className={styles.dashCard}>
           <h4>5 day earnings</h4>
           <p className={styles.dollar}>$</p>
-          <h3>= 0 $kyoto</h3>
+          <h3>= 0 $PTX</h3>
         </div>
         <div className={styles.dashCard}>
           <h4>30 day roi</h4>
           <p className={styles.dollar}>$</p>
-          <h3>= 0 $kyoto</h3>
+          <h3>= 0 $PTX</h3>
         </div>
         <div className={styles.dashCard}>
           <h4>next rebase amount</h4>
           <p className={styles.dollar}>$</p>
-          <h3>= 0 $kyoto</h3>
+          <h3>= 0 $PTX</h3>
           <h3>0%</h3>
         </div>
       </div>

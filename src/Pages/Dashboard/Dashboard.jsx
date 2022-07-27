@@ -6,7 +6,7 @@ function Dashboard() {
       <h1>Dashboard</h1>
       <div className={styles.cardDiv}>
         <div className={styles.dashCard}>
-          <h4>$kyoto price</h4>
+          <h4>$PTX price</h4>
           <h3>$20.636</h3>
         </div>
         <div className={styles.dashCard}>
@@ -18,7 +18,7 @@ function Dashboard() {
           <h3>916,474%</h3>
         </div>
         <div className={styles.dashCard}>
-          <h4>kyoto foundation</h4>
+          <h4>PTX foundation</h4>
           <h3>$4,324,848.877</h3>
         </div>
         <div className={styles.dashCard}>
