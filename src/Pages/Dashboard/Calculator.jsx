@@ -23,7 +23,10 @@ function Calculator() {
           />
         </div>
       </div>
-      <div className={styles.inputWrapper}>
+      <div
+        style={{ width: "calc(50% - 10px)" }}
+        className={styles.inputWrapper}
+      >
         <label htmlFor="amount">future $PTX market price ($)t</label>
         <div className={styles.inputDiv}>
           <input type="text" id="amount" placeholder="0.00" />
